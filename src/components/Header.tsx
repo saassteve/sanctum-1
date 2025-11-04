@@ -1,5 +1,5 @@
 import React from 'react';
-import { Activity, Menu, X } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import { useNavigate, useLocation } from 'react-router-dom';
 
 interface HeaderProps {
@@ -36,9 +36,12 @@ export default function Header({ isMenuOpen, setIsMenuOpen }: HeaderProps) {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <div className="flex items-center space-x-2 cursor-pointer" onClick={() => navigate('/')}>
-            <Activity className="h-8 w-8 text-[#002DFF]" strokeWidth={1.5} />
-            <span className="text-2xl font-light text-[#1A1A1A] tracking-tight">SANCTUM</span>
+          <div className="flex items-center cursor-pointer" onClick={() => navigate('/')}>
+            <img
+              src="/SANCTUM_LOGO.png"
+              alt="Sanctum"
+              className="h-8 w-auto"
+            />
           </div>
 
           {/* Desktop Navigation */}

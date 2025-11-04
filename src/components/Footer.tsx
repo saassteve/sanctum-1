@@ -1,5 +1,5 @@
 import React from 'react';
-import { Activity, Mail, Phone, MapPin } from 'lucide-react';
+import { Mail, Phone, MapPin } from 'lucide-react';
 
 export default function Footer() {
   return (
@@ -8,9 +8,12 @@ export default function Footer() {
         <div className="grid md:grid-cols-4 gap-8">
           {/* Logo & Description */}
           <div className="md:col-span-2">
-            <div className="flex items-center space-x-2 mb-6">
-              <Activity className="h-8 w-8 text-[#002DFF]" strokeWidth={1.5} />
-              <span className="text-2xl font-light tracking-tight">SANCTUM</span>
+            <div className="mb-6">
+              <img
+                src="/SANCTUM_LOGO.png"
+                alt="Sanctum"
+                className="h-8 w-auto"
+              />
             </div>
             <p className="text-white/70 font-light leading-relaxed max-w-md mb-6">
               The UK's first comprehensive home health survey service for property buyers. 
