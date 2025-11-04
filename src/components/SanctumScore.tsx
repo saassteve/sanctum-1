@@ -16,7 +16,7 @@ export default function SanctumScore() {
           setIsVisible(true);
         }
       },
-      { threshold: 0.3 }
+      { threshold: 0.2 }
     );
 
     if (sectionRef.current) {
@@ -28,22 +28,26 @@ export default function SanctumScore() {
 
   useEffect(() => {
     if (isVisible) {
-      const duration = 2000;
-      const steps = 60;
-      const increment = targetScore / steps;
-      let current = 0;
+      const duration = 2500;
+      const startTime = Date.now();
       
-      const timer = setInterval(() => {
-        current += increment;
-        if (current >= targetScore) {
-          setAnimatedScore(targetScore);
-          clearInterval(timer);
-        } else {
-          setAnimatedScore(Math.floor(current));
+      const animate = () => {
+        const now = Date.now();
+        const elapsed = now - startTime;
+        const progress = Math.min(elapsed / duration, 1);
+        
+        // Easing function for smooth animation (easeOutCubic)
+        const easeProgress = 1 - Math.pow(1 - progress, 3);
+        const current = Math.floor(easeProgress * targetScore);
+        
+        setAnimatedScore(current);
+        
+        if (progress < 1) {
+          requestAnimationFrame(animate);
         }
-      }, duration / steps);
-
-      return () => clearInterval(timer);
+      };
+      
+      requestAnimationFrame(animate);
     }
   }, [isVisible, targetScore]);
 
@@ -100,7 +104,7 @@ export default function SanctumScore() {
                       strokeWidth="12"
                       fill="none"
                     />
-                    {/* Progress circle */}
+                    {/* Progress circle with smooth animation */}
                     <circle
                       cx="100"
                       cy="100"
@@ -110,8 +114,11 @@ export default function SanctumScore() {
                       fill="none"
                       strokeLinecap="round"
                       strokeDasharray={`${2 * Math.PI * 85}`}
-                      strokeDashoffset={`${2 * Math.PI * 85 * (1 - (isVisible ? animatedScore / 100 : 0))}`}
-                      className="transition-all duration-2000 ease-out drop-shadow-lg"
+                      strokeDashoffset={`${2 * Math.PI * 85 * (1 - animatedScore / 100)}`}
+                      style={{
+                        transition: 'stroke-dashoffset 0.1s ease-out',
+                        filter: 'drop-shadow(0 0 8px rgba(0, 45, 255, 0.3))'
+                      }}
                     />
                     <defs>
                       <linearGradient id="scoreGradient" x1="0%" y1="0%" x2="100%" y2="100%">
@@ -123,7 +130,9 @@ export default function SanctumScore() {
                   </svg>
                   <div className="absolute inset-0 flex items-center justify-center">
                     <div className="text-center">
-                      <div className="text-6xl font-bold bg-gradient-to-br from-[#002DFF] to-[#4D7FFF] bg-clip-text text-transparent mb-2">{animatedScore}</div>
+                      <div className="text-6xl font-bold bg-gradient-to-br from-[#002DFF] to-[#4D7FFF] bg-clip-text text-transparent mb-2">
+                        {animatedScore}
+                      </div>
                       <div className="text-xs font-semibold text-[#6B7280] uppercase tracking-widest">
                         Sanctum Score
                       </div>
@@ -204,8 +213,11 @@ export default function SanctumScore() {
                 <div className="flex items-center space-x-4">
                   <div className="w-24 h-3 bg-gray-100 rounded-full overflow-hidden">
                     <div 
-                      className="h-full bg-gradient-to-r from-green-500 to-green-600 rounded-full transition-all duration-1000 ease-out"
-                      style={{ width: isVisible ? '92%' : '0%' }}
+                      className="h-full bg-gradient-to-r from-green-500 to-green-600 rounded-full"
+                      style={{ 
+                        width: isVisible ? '92%' : '0%',
+                        transition: 'width 1.5s cubic-bezier(0.4, 0, 0.2, 1) 0.3s'
+                      }}
                     ></div>
                   </div>
                   <span className="text-base font-bold text-green-600 w-8">92</span>
@@ -220,8 +232,11 @@ export default function SanctumScore() {
                 <div className="flex items-center space-x-4">
                   <div className="w-24 h-3 bg-gray-100 rounded-full overflow-hidden">
                     <div 
-                      className="h-full bg-gradient-to-r from-blue-500 to-blue-600 rounded-full transition-all duration-1000 ease-out"
-                      style={{ width: isVisible ? '85%' : '0%', transitionDelay: '200ms' }}
+                      className="h-full bg-gradient-to-r from-blue-500 to-blue-600 rounded-full"
+                      style={{ 
+                        width: isVisible ? '85%' : '0%',
+                        transition: 'width 1.5s cubic-bezier(0.4, 0, 0.2, 1) 0.5s'
+                      }}
                     ></div>
                   </div>
                   <span className="text-base font-bold text-blue-600 w-8">85</span>
@@ -236,8 +251,11 @@ export default function SanctumScore() {
                 <div className="flex items-center space-x-4">
                   <div className="w-24 h-3 bg-gray-100 rounded-full overflow-hidden">
                     <div 
-                      className="h-full bg-gradient-to-r from-amber-500 to-amber-600 rounded-full transition-all duration-1000 ease-out"
-                      style={{ width: isVisible ? '64%' : '0%', transitionDelay: '400ms' }}
+                      className="h-full bg-gradient-to-r from-amber-500 to-amber-600 rounded-full"
+                      style={{ 
+                        width: isVisible ? '64%' : '0%',
+                        transition: 'width 1.5s cubic-bezier(0.4, 0, 0.2, 1) 0.7s'
+                      }}
                     ></div>
                   </div>
                   <span className="text-base font-bold text-amber-600 w-8">64</span>
@@ -252,8 +270,11 @@ export default function SanctumScore() {
                 <div className="flex items-center space-x-4">
                   <div className="w-24 h-3 bg-gray-100 rounded-full overflow-hidden">
                     <div 
-                      className="h-full bg-gradient-to-r from-blue-500 to-blue-600 rounded-full transition-all duration-1000 ease-out"
-                      style={{ width: isVisible ? '88%' : '0%', transitionDelay: '600ms' }}
+                      className="h-full bg-gradient-to-r from-blue-500 to-blue-600 rounded-full"
+                      style={{ 
+                        width: isVisible ? '88%' : '0%',
+                        transition: 'width 1.5s cubic-bezier(0.4, 0, 0.2, 1) 0.9s'
+                      }}
                     ></div>
                   </div>
                   <span className="text-base font-bold text-blue-600 w-8">88</span>
@@ -268,8 +289,11 @@ export default function SanctumScore() {
                 <div className="flex items-center space-x-4">
                   <div className="w-24 h-3 bg-gray-100 rounded-full overflow-hidden">
                     <div 
-                      className="h-full bg-gradient-to-r from-red-500 to-red-600 rounded-full transition-all duration-1000 ease-out"
-                      style={{ width: isVisible ? '61%' : '0%', transitionDelay: '800ms' }}
+                      className="h-full bg-gradient-to-r from-red-500 to-red-600 rounded-full"
+                      style={{ 
+                        width: isVisible ? '61%' : '0%',
+                        transition: 'width 1.5s cubic-bezier(0.4, 0, 0.2, 1) 1.1s'
+                      }}
                     ></div>
                   </div>
                   <span className="text-base font-bold text-red-600 w-8">61</span>

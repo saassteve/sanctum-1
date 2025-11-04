@@ -3,7 +3,7 @@ import React from 'react';
 export default function Hero() {
   return (
     <section 
-      className="h-screen flex items-center relative overflow-hidden pt-20 sm:pt-16"
+      className="min-h-screen flex items-center relative overflow-hidden pt-24 pb-16 sm:pt-28 sm:pb-20 md:pt-32 md:pb-24"
       style={{
         backgroundImage: 'url("/sanctumbedroom.png")',
         backgroundSize: 'cover',
@@ -25,8 +25,8 @@ export default function Hero() {
         style={{ animationDuration: '4s' }}
       ></div>
 
-      {/* Content Container - Left Aligned */}
-      <div className="relative z-10 max-w-[90%] sm:max-w-[65%] lg:max-w-[55%] pl-4 sm:pl-8 md:pl-12 lg:pl-16 xl:pl-24">
+      {/* Content Container - Left Aligned with proper spacing */}
+      <div className="relative z-10 max-w-[90%] sm:max-w-[65%] lg:max-w-[55%] px-6 sm:px-8 md:px-12 lg:px-16 xl:px-24">
         {/* Small Label with enhanced styling */}
         <div className="mb-6">
           <span className="inline-block px-5 py-2.5 text-xs font-semibold text-white/95 bg-white/10 backdrop-blur-md border border-white/30 rounded-full uppercase tracking-wider shadow-lg">
