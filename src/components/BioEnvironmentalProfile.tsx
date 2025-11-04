@@ -26,7 +26,7 @@ export default function BioEnvironmentalProfile() {
               <span className="text-sanctum-cyan-500">Bio-Environmental</span>{' '}
               <span className="text-[#1A1A1A]">Profile</span>
             </h2>
-            <p className="text-xl text-[#6B7280] font-light leading-relaxed mb-8">
+            <p className="text-xl text-[#4B5563] font-light leading-relaxed mb-8">
               Before you purchase a property in the UK, get a comprehensive diagnostic assessment
               of environmental factors that could impact your family's health. Our five-pillar
               evaluation provides measured data to support informed decisions.
@@ -35,7 +35,7 @@ export default function BioEnvironmentalProfile() {
             {/* Benefits Callout */}
             <div className="bg-gradient-to-br from-[#F7F8FA] to-white border-l-4 border-sanctum-cyan-500 p-6 rounded-r-lg shadow-sm">
               <h3 className="text-sm font-bold text-[#1A1A1A] uppercase tracking-wide mb-3">Why Survey Before Buying?</h3>
-              <ul className="space-y-2 text-sm text-[#6B7280]">
+              <ul className="space-y-2 text-sm text-[#4B5563]">
                 <li className="flex items-start space-x-2">
                   <svg className="w-4 h-4 text-sanctum-cyan-400 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
@@ -81,7 +81,7 @@ export default function BioEnvironmentalProfile() {
                   <h3 className="text-xl font-bold text-[#1A1A1A] mb-3 uppercase tracking-wide">
                     Atmospheric Purity
                   </h3>
-                  <p className="text-[#6B7280] font-light leading-relaxed mb-4">
+                  <p className="text-[#4B5563] font-light leading-relaxed mb-4">
                     Professional air quality testing covering PM2.5, PM10, VOCs, CO₂, formaldehyde, radon,
                     mould spores, and common allergens. Measures respiratory irritants that standard
                     property surveys do not assess.
@@ -111,7 +111,7 @@ export default function BioEnvironmentalProfile() {
                   <h3 className="text-xl font-bold text-[#1A1A1A] mb-3 uppercase tracking-wide">
                     Hydration Integrity
                   </h3>
-                  <p className="text-[#6B7280] font-light leading-relaxed mb-4">
+                  <p className="text-[#4B5563] font-light leading-relaxed mb-4">
                     Laboratory-grade water quality analysis testing for lead, copper, nitrates, chlorine,
                     fluoride, heavy metals, microplastics, and microbial contamination. Relevant for UK
                     properties with older plumbing or well water.
@@ -141,7 +141,7 @@ export default function BioEnvironmentalProfile() {
                   <h3 className="text-xl font-bold text-[#1A1A1A] mb-3 uppercase tracking-wide">
                     Electromagnetic Hygiene
                   </h3>
-                  <p className="text-[#6B7280] font-light leading-relaxed mb-4">
+                  <p className="text-[#4B5563] font-light leading-relaxed mb-4">
                     Comprehensive EMF mapping measuring RF radiation, magnetic fields, electric fields,
                     and dirty electricity. Evaluates proximity to power lines, substations, mobile towers,
                     and identifies high-exposure zones within the property.
@@ -171,7 +171,7 @@ export default function BioEnvironmentalProfile() {
                   <h3 className="text-xl font-bold text-[#1A1A1A] mb-3 uppercase tracking-wide">
                     Circadian Alignment
                   </h3>
-                  <p className="text-[#6B7280] font-light leading-relaxed mb-4">
+                  <p className="text-[#4B5563] font-light leading-relaxed mb-4">
                     Light spectrum analysis measuring natural daylight exposure, blue light levels, and
                     artificial lighting quality. Evaluates window placement, orientation, and how the
                     property design relates to natural sleep-wake cycles.
@@ -204,7 +204,7 @@ export default function BioEnvironmentalProfile() {
                   <h3 className="text-xl font-bold text-[#1A1A1A] mb-3 uppercase tracking-wide">
                     Material Toxicity
                   </h3>
-                  <p className="text-[#6B7280] font-light leading-relaxed mb-4">
+                  <p className="text-[#4B5563] font-light leading-relaxed mb-4">
                     Advanced chemical analysis of building materials, paints, carpets, insulation, and
                     furnishings for toxic compounds. Tests for asbestos, lead paint, flame retardants,
                     phthalates, and VOC off-gassing from synthetic materials.

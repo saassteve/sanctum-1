@@ -36,22 +36,22 @@ export default function Hero() {
 
         {/* Main Headline with improved typography */}
         <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white leading-[1.15] mb-6 sm:mb-8">
-          Don't Buy Blind.{' '}
+          Your New Home{' '}
           <span
             className="block mt-2 text-sanctum-cyan-300"
             style={{
               filter: 'drop-shadow(0 0 20px rgba(135, 207, 225, 0.6)) drop-shadow(0 0 10px rgba(135, 207, 225, 0.4))'
             }}
           >
-            Know Your Home's True Health
+            Could Make You Sick
           </span>
         </h1>
 
         {/* Subheading with better contrast */}
         <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-white/95 font-light leading-relaxed mb-8 sm:mb-10 max-w-2xl drop-shadow-sm">
-          Comprehensive home health surveys for UK property buyers.
-          Get your <span className="font-semibold text-white">Sanctum Score™</span> and
-          negotiate with confidence. Backed by measured data, delivered in 48 hours.
+          Hidden environmental dangers lurk in properties that look perfect on the surface.
+          Get your <span className="font-semibold text-white">Sanctum Score™</span> before you buy—comprehensive
+          home health surveys backed by measured data, delivered in 48 hours.
         </p>
 
         {/* Key Benefits with improved styling */}

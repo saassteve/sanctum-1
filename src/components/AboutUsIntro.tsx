@@ -19,7 +19,7 @@ export default function AboutUsIntro() {
         </h2>
 
         {/* Paragraph */}
-        <p className="text-xl text-[#6B7280] font-light leading-relaxed mb-8 max-w-3xl mx-auto">
+        <p className="text-xl text-[#4B5563] font-light leading-relaxed mb-8 max-w-3xl mx-auto">
           Sanctum was created after purchasing a property that appeared ideal on the surface,
           but later revealed hidden environmental issues. Standard property surveys did not assess
           these factors. We created the pre-purchase home health survey to give UK property buyers
@@ -31,15 +31,15 @@ export default function AboutUsIntro() {
         <div className="grid md:grid-cols-3 gap-8 mb-12 max-w-2xl mx-auto">
           <div>
             <div className="text-3xl font-bold text-sanctum-cyan-400 mb-2">200+</div>
-            <p className="text-sm text-[#6B7280]">environmental data points measured</p>
+            <p className="text-sm text-[#4B5563]">environmental data points measured</p>
           </div>
           <div>
             <div className="text-3xl font-bold text-sanctum-cyan-400 mb-2">48 Hours</div>
-            <p className="text-sm text-[#6B7280]">report delivery time</p>
+            <p className="text-sm text-[#4B5563]">report delivery time</p>
           </div>
           <div>
             <div className="text-3xl font-bold text-sanctum-cyan-400 mb-2">5 Categories</div>
-            <p className="text-sm text-[#6B7280]">comprehensive environmental assessment</p>
+            <p className="text-sm text-[#4B5563]">comprehensive environmental assessment</p>
           </div>
         </div>
 

@@ -13,7 +13,7 @@ export default function DataToAction() {
             <span className="text-sanctum-cyan-500">How It</span>{' '}
             <span className="text-[#1A1A1A]">Works</span>
           </h2>
-          <p className="text-xl md:text-2xl text-[#6B7280] font-light max-w-4xl mx-auto">
+          <p className="text-xl md:text-2xl text-[#4B5563] font-light max-w-4xl mx-auto">
             From property viewing to Sanctum Score delivery, we make it simple
           </p>
         </div>
@@ -35,7 +35,7 @@ export default function DataToAction() {
             <h3 className="text-xl font-bold text-[#1A1A1A] mb-4 uppercase tracking-wide">
               Book Your Survey
             </h3>
-            <p className="text-[#6B7280] font-light leading-relaxed">
+            <p className="text-[#4B5563] font-light leading-relaxed">
               Schedule your pre-purchase home health survey online. We will coordinate with your property viewing schedule and estate agent for convenient access.
             </p>
           </div>
@@ -53,7 +53,7 @@ export default function DataToAction() {
             <h3 className="text-xl font-bold text-[#1A1A1A] mb-4 uppercase tracking-wide">
               On-Site Assessment
             </h3>
-            <p className="text-[#6B7280] font-light leading-relaxed">
+            <p className="text-[#4B5563] font-light leading-relaxed">
               Our specialists conduct a thorough 3-4 hour property assessment using professional-grade equipment. All five environmental categories are tested comprehensively.
             </p>
           </div>
@@ -71,7 +71,7 @@ export default function DataToAction() {
             <h3 className="text-xl font-bold text-[#1A1A1A] mb-4 uppercase tracking-wide">
               48-Hour Analysis
             </h3>
-            <p className="text-[#6B7280] font-light leading-relaxed">
+            <p className="text-[#4B5563] font-light leading-relaxed">
               Our team analyses all data and calculates your property's Sanctum Score. Results are compiled into a comprehensive report.
             </p>
           </div>
@@ -89,7 +89,7 @@ export default function DataToAction() {
             <h3 className="text-xl font-bold text-[#1A1A1A] mb-4 uppercase tracking-wide">
               Make Your Decision
             </h3>
-            <p className="text-[#6B7280] font-light leading-relaxed">
+            <p className="text-[#4B5563] font-light leading-relaxed">
               Use your Sanctum Score to negotiate price, budget for improvements, or walk away with confidence. Includes 30-minute consultation call to discuss findings.
             </p>
           </div>
@@ -101,17 +101,17 @@ export default function DataToAction() {
             <div>
               <div className="text-3xl font-bold text-sanctum-cyan-400 mb-2">3-4 Hours</div>
               <div className="text-sm font-semibold text-[#1A1A1A] uppercase tracking-wide mb-1">Survey Duration</div>
-              <p className="text-xs text-[#6B7280]">Non-invasive testing</p>
+              <p className="text-xs text-[#4B5563]">Non-invasive testing</p>
             </div>
             <div>
               <div className="text-3xl font-bold text-sanctum-cyan-400 mb-2">48 Hours</div>
               <div className="text-sm font-semibold text-[#1A1A1A] uppercase tracking-wide mb-1">Report Delivery</div>
-              <p className="text-xs text-[#6B7280]">Fast turnaround time</p>
+              <p className="text-xs text-[#4B5563]">Fast turnaround time</p>
             </div>
             <div>
               <div className="text-3xl font-bold text-sanctum-cyan-400 mb-2">5 Categories</div>
               <div className="text-sm font-semibold text-[#1A1A1A] uppercase tracking-wide mb-1">Environmental Factors</div>
-              <p className="text-xs text-[#6B7280]">Comprehensive assessment</p>
+              <p className="text-xs text-[#4B5563]">Comprehensive assessment</p>
             </div>
           </div>
         </div>
