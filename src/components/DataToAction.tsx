@@ -7,7 +7,7 @@ export default function DataToAction() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <div className="inline-flex items-center space-x-2 mb-4">
-            <span className="text-sm font-semibold text-[#002DFF] uppercase tracking-wider">Our Process</span>
+            <span className="text-sm font-semibold text-sanctum-cyan-600 uppercase tracking-wider">Our Process</span>
           </div>
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#1A1A1A] mb-6">
             How It Works
@@ -19,17 +19,17 @@ export default function DataToAction() {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 relative">
           {/* Connection Lines - Desktop Only */}
-          <div className="hidden lg:block absolute top-24 left-0 right-0 h-0.5 bg-gradient-to-r from-transparent via-[#002DFF]/20 to-transparent" style={{ width: '85%', left: '7.5%' }}></div>
+          <div className="hidden lg:block absolute top-24 left-0 right-0 h-0.5 bg-gradient-to-r from-transparent via-sanctum-cyan-400/20 to-transparent" style={{ width: '85%', left: '7.5%' }}></div>
 
           {/* Step 1: Book Survey */}
           <div className="text-center relative">
             <div className="flex items-center justify-center mb-6">
-              <div className="w-20 h-20 bg-gradient-to-br from-[#002DFF] to-[#4D7FFF] rounded-full flex items-center justify-center shadow-lg relative z-10">
+              <div className="w-20 h-20 bg-gradient-to-br from-sanctum-cyan-500 to-sanctum-cyan-600 rounded-full flex items-center justify-center shadow-lg relative z-10">
                 <Calendar className="w-10 h-10 text-white" strokeWidth={1.5} />
               </div>
             </div>
             <div className="mb-4">
-              <span className="inline-block px-3 py-1 text-xs font-bold text-white bg-[#002DFF] rounded-full">STEP 1</span>
+              <span className="inline-block px-3 py-1 text-xs font-bold text-white bg-sanctum-cyan-500 rounded-full">STEP 1</span>
             </div>
             <h3 className="text-xl font-bold text-[#1A1A1A] mb-4 uppercase tracking-wide">
               Book Your Survey
@@ -42,12 +42,12 @@ export default function DataToAction() {
           {/* Step 2: On-Site Assessment */}
           <div className="text-center relative">
             <div className="flex items-center justify-center mb-6">
-              <div className="w-20 h-20 bg-gradient-to-br from-[#002DFF] to-[#4D7FFF] rounded-full flex items-center justify-center shadow-lg relative z-10">
+              <div className="w-20 h-20 bg-gradient-to-br from-sanctum-cyan-500 to-sanctum-cyan-600 rounded-full flex items-center justify-center shadow-lg relative z-10">
                 <Home className="w-10 h-10 text-white" strokeWidth={1.5} />
               </div>
             </div>
             <div className="mb-4">
-              <span className="inline-block px-3 py-1 text-xs font-bold text-white bg-[#002DFF] rounded-full">STEP 2</span>
+              <span className="inline-block px-3 py-1 text-xs font-bold text-white bg-sanctum-cyan-500 rounded-full">STEP 2</span>
             </div>
             <h3 className="text-xl font-bold text-[#1A1A1A] mb-4 uppercase tracking-wide">
               On-Site Assessment
@@ -60,12 +60,12 @@ export default function DataToAction() {
           {/* Step 3: Analysis & Sanctum Score */}
           <div className="text-center relative">
             <div className="flex items-center justify-center mb-6">
-              <div className="w-20 h-20 bg-gradient-to-br from-[#002DFF] to-[#4D7FFF] rounded-full flex items-center justify-center shadow-lg relative z-10">
+              <div className="w-20 h-20 bg-gradient-to-br from-sanctum-cyan-500 to-sanctum-cyan-600 rounded-full flex items-center justify-center shadow-lg relative z-10">
                 <TrendingUp className="w-10 h-10 text-white" strokeWidth={1.5} />
               </div>
             </div>
             <div className="mb-4">
-              <span className="inline-block px-3 py-1 text-xs font-bold text-white bg-[#002DFF] rounded-full">STEP 3</span>
+              <span className="inline-block px-3 py-1 text-xs font-bold text-white bg-sanctum-cyan-500 rounded-full">STEP 3</span>
             </div>
             <h3 className="text-xl font-bold text-[#1A1A1A] mb-4 uppercase tracking-wide">
               48-Hour Analysis
@@ -78,12 +78,12 @@ export default function DataToAction() {
           {/* Step 4: Make Your Decision */}
           <div className="text-center relative">
             <div className="flex items-center justify-center mb-6">
-              <div className="w-20 h-20 bg-gradient-to-br from-[#002DFF] to-[#4D7FFF] rounded-full flex items-center justify-center shadow-lg relative z-10">
+              <div className="w-20 h-20 bg-gradient-to-br from-sanctum-cyan-500 to-sanctum-cyan-600 rounded-full flex items-center justify-center shadow-lg relative z-10">
                 <FileText className="w-10 h-10 text-white" strokeWidth={1.5} />
               </div>
             </div>
             <div className="mb-4">
-              <span className="inline-block px-3 py-1 text-xs font-bold text-white bg-[#002DFF] rounded-full">STEP 4</span>
+              <span className="inline-block px-3 py-1 text-xs font-bold text-white bg-sanctum-cyan-500 rounded-full">STEP 4</span>
             </div>
             <h3 className="text-xl font-bold text-[#1A1A1A] mb-4 uppercase tracking-wide">
               Make Your Decision
@@ -98,17 +98,17 @@ export default function DataToAction() {
         <div className="mt-16 bg-white rounded-2xl p-8 md:p-12 shadow-xl border border-gray-100">
           <div className="grid md:grid-cols-3 gap-8 text-center">
             <div>
-              <div className="text-3xl font-bold text-[#002DFF] mb-2">3-4 Hours</div>
+              <div className="text-3xl font-bold text-sanctum-cyan-500 mb-2">3-4 Hours</div>
               <div className="text-sm font-semibold text-[#1A1A1A] uppercase tracking-wide mb-1">Survey Duration</div>
               <p className="text-xs text-[#6B7280]">Non-invasive testing</p>
             </div>
             <div>
-              <div className="text-3xl font-bold text-[#002DFF] mb-2">48 Hours</div>
+              <div className="text-3xl font-bold text-sanctum-cyan-500 mb-2">48 Hours</div>
               <div className="text-sm font-semibold text-[#1A1A1A] uppercase tracking-wide mb-1">Report Delivery</div>
               <p className="text-xs text-[#6B7280]">Fast turnaround time</p>
             </div>
             <div>
-              <div className="text-3xl font-bold text-[#002DFF] mb-2">5 Categories</div>
+              <div className="text-3xl font-bold text-sanctum-cyan-500 mb-2">5 Categories</div>
               <div className="text-sm font-semibold text-[#1A1A1A] uppercase tracking-wide mb-1">Environmental Factors</div>
               <p className="text-xs text-[#6B7280]">Comprehensive assessment</p>
             </div>

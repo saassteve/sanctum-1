@@ -54,15 +54,15 @@ export default function SanctumScore() {
   return (
     <section ref={sectionRef} id="sanctum-score" className="py-24 bg-gradient-to-b from-[#F7F8FA] to-white relative overflow-hidden">
       {/* Decorative Background Elements */}
-      <div className="absolute top-0 right-0 w-96 h-96 bg-[#002DFF]/5 rounded-full blur-3xl"></div>
-      <div className="absolute bottom-0 left-0 w-96 h-96 bg-[#4D7FFF]/5 rounded-full blur-3xl"></div>
+      <div className="absolute top-0 right-0 w-96 h-96 bg-sanctum-cyan-400/5 rounded-full blur-3xl"></div>
+      <div className="absolute bottom-0 left-0 w-96 h-96 bg-sanctum-cyan-300/5 rounded-full blur-3xl"></div>
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Main Headings */}
         <div className="text-center mb-6">
           <div className="inline-flex items-center space-x-2 mb-4">
-            <Award className="w-8 h-8 text-[#002DFF]" />
-            <span className="text-sm font-semibold text-[#002DFF] uppercase tracking-wider">Proprietary Algorithm</span>
+            <Award className="w-8 h-8 text-sanctum-cyan-500" />
+            <span className="text-sm font-semibold text-sanctum-cyan-600 uppercase tracking-wider">Proprietary Algorithm</span>
           </div>
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#1A1A1A] mb-6">
             The Sanctum Score<sup className="text-2xl">™</sup>
@@ -75,11 +75,11 @@ export default function SanctumScore() {
 
         {/* Featured Badge */}
         <div className="flex justify-center mb-12">
-          <div className="inline-flex items-center space-x-2 px-6 py-3 bg-gradient-to-r from-[#002DFF]/10 to-[#4D7FFF]/10 border border-[#002DFF]/20 rounded-full">
-            <svg className="w-5 h-5 text-[#002DFF]" fill="currentColor" viewBox="0 0 20 20">
+          <div className="inline-flex items-center space-x-2 px-6 py-3 bg-gradient-to-r from-sanctum-cyan-400/10 to-sanctum-cyan-300/10 border border-sanctum-cyan-500/20 rounded-full">
+            <svg className="w-5 h-5 text-sanctum-cyan-500" fill="currentColor" viewBox="0 0 20 20">
               <path fillRule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
             </svg>
-            <span className="text-sm font-semibold text-[#002DFF]">UK's First Standardised Home Health Metric</span>
+            <span className="text-sm font-semibold text-sanctum-cyan-600">UK's First Standardised Home Health Metric</span>
           </div>
         </div>
 
@@ -89,7 +89,7 @@ export default function SanctumScore() {
           <div className="lg:col-span-2 flex justify-center lg:justify-start">
             <div className="bg-white rounded-2xl p-12 shadow-2xl border-2 border-gray-100 relative overflow-hidden">
               {/* Subtle gradient background */}
-              <div className="absolute inset-0 bg-gradient-to-br from-[#002DFF]/5 to-transparent"></div>
+              <div className="absolute inset-0 bg-gradient-to-br from-sanctum-cyan-400/5 to-transparent"></div>
               
               {/* Score Display */}
               <div className="text-center mb-8 relative z-10">
@@ -122,15 +122,15 @@ export default function SanctumScore() {
                     />
                     <defs>
                       <linearGradient id="scoreGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                        <stop offset="0%" stopColor="#002DFF" />
-                        <stop offset="50%" stopColor="#4D7FFF" />
-                        <stop offset="100%" stopColor="#80B3FF" />
+                        <stop offset="0%" stopColor="#4A90A4" />
+                        <stop offset="50%" stopColor="#6DB4C7" />
+                        <stop offset="100%" stopColor="#87CFE1" />
                       </linearGradient>
                     </defs>
                   </svg>
                   <div className="absolute inset-0 flex items-center justify-center">
                     <div className="text-center">
-                      <div className="text-6xl font-bold bg-gradient-to-br from-[#002DFF] to-[#4D7FFF] bg-clip-text text-transparent mb-2">
+                      <div className="text-6xl font-bold bg-gradient-to-br from-sanctum-cyan-500 to-sanctum-cyan-400 bg-clip-text text-transparent mb-2">
                         {animatedScore}
                       </div>
                       <div className="text-xs font-semibold text-[#6B7280] uppercase tracking-widest">
@@ -165,9 +165,9 @@ export default function SanctumScore() {
               </p>
               
               {/* Key Benefit Callout */}
-              <div className="bg-gradient-to-r from-[#002DFF]/5 to-[#4D7FFF]/5 border-l-4 border-[#002DFF] p-4 rounded-r-lg">
+              <div className="bg-gradient-to-r from-sanctum-cyan-400/5 to-sanctum-cyan-300/5 border-l-4 border-sanctum-cyan-500 p-4 rounded-r-lg">
                 <p className="text-sm font-medium text-[#1A1A1A]">
-                  <span className="text-[#002DFF] font-semibold">For Property Buyers:</span> Use your Sanctum Score to negotiate purchase price, plan renovation budgets, or walk away from properties with hidden environmental issues.
+                  <span className="text-sanctum-cyan-600 font-semibold">For Property Buyers:</span> Use your Sanctum Score to negotiate purchase price, plan renovation budgets, or walk away from properties with hidden environmental issues.
                 </p>
               </div>
             </div>
@@ -304,9 +304,9 @@ export default function SanctumScore() {
         </div>
 
         {/* Priority Recommendations */}
-        <div className="bg-gradient-to-r from-[#002DFF]/10 to-[#4D7FFF]/5 border-l-4 border-[#002DFF] rounded-r-xl p-8 mb-12">
+        <div className="bg-gradient-to-r from-sanctum-cyan-400/10 to-sanctum-cyan-300/5 border-l-4 border-sanctum-cyan-500 rounded-r-xl p-8 mb-12">
           <h4 className="text-lg font-bold text-[#1A1A1A] mb-4 flex items-center">
-            <AlertTriangle className="w-5 h-5 mr-2 text-[#002DFF]" />
+            <AlertTriangle className="w-5 h-5 mr-2 text-sanctum-cyan-600" />
             Priority Recommendations for This Property
           </h4>
           <ul className="space-y-3 text-sm text-[#4B5563]">
@@ -327,9 +327,9 @@ export default function SanctumScore() {
 
         {/* Call to Action Link */}
         <div className="text-center">
-          <a 
-            href="/sample-report" 
-            className="inline-flex items-center px-8 py-4 text-base font-semibold text-white bg-gradient-to-r from-[#002DFF] to-[#0040FF] hover:from-[#0026CC] hover:to-[#0033DD] rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
+          <a
+            href="/sample-report"
+            className="inline-flex items-center px-8 py-4 text-base font-semibold text-white bg-gradient-to-r from-sanctum-cyan-500 to-sanctum-cyan-600 hover:from-sanctum-cyan-600 hover:to-sanctum-cyan-700 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
           >

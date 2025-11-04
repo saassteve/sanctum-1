@@ -45,27 +45,24 @@ export default function Header({ isMenuOpen, setIsMenuOpen }: HeaderProps) {
           </div>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-8">
-            <button onClick={() => handleNavigation('bio-environmental')} className="text-sm font-medium text-[#1A1A1A] hover:text-[#002DFF] transition-colors">
+          <nav className="hidden md:flex items-center space-x-10">
+            <button onClick={() => handleNavigation('bio-environmental')} className="text-sm font-medium text-[#1A1A1A] hover:text-sanctum-cyan-500 transition-colors">
               DIAGNOSTICS
             </button>
-            <button onClick={() => handleNavigation('sanctum-score')} className="text-sm font-medium text-[#1A1A1A] hover:text-[#002DFF] transition-colors">
+            <button onClick={() => handleNavigation('sanctum-score')} className="text-sm font-medium text-[#1A1A1A] hover:text-sanctum-cyan-500 transition-colors">
               SCORING
             </button>
-            <button onClick={() => handleNavigation('blueprint')} className="text-sm font-medium text-[#1A1A1A] hover:text-[#002DFF] transition-colors">
+            <button onClick={() => handleNavigation('blueprint')} className="text-sm font-medium text-[#1A1A1A] hover:text-sanctum-cyan-500 transition-colors">
               PROCESS
             </button>
-            <button onClick={() => { navigate('/about'); window.scrollTo(0, 0); setIsMenuOpen(false); }} className="text-sm font-medium text-[#1A1A1A] hover:text-[#002DFF] transition-colors">
+            <button onClick={() => { navigate('/about'); window.scrollTo(0, 0); setIsMenuOpen(false); }} className="text-sm font-medium text-[#1A1A1A] hover:text-sanctum-cyan-500 transition-colors">
               ABOUT
             </button>
           </nav>
 
-          {/* Desktop CTA Buttons */}
-          <div className="hidden md:flex items-center space-x-4">
-            <button className="px-4 py-2 text-sm font-medium text-[#1A1A1A] border border-gray-400 hover:border-gray-300 transition-colors">
-              CONTACT US
-            </button>
-            <button className="px-6 py-2 text-sm font-medium text-white bg-[#002DFF] hover:bg-[#0026CC] transition-colors">
+          {/* Desktop CTA Button */}
+          <div className="hidden md:flex items-center">
+            <button className="px-6 py-2.5 text-sm font-semibold text-white bg-sanctum-cyan-500 hover:bg-sanctum-cyan-600 transition-all duration-300 shadow-md hover:shadow-lg">
               SCHEDULE ASSESSMENT
             </button>
           </div>
@@ -100,11 +97,8 @@ export default function Header({ isMenuOpen, setIsMenuOpen }: HeaderProps) {
             <button onClick={() => { navigate('/about'); window.scrollTo(0, 0); setIsMenuOpen(false); }} className="block text-sm font-medium text-[#1A1A1A] text-left w-full">
               ABOUT
             </button>
-            <div className="pt-4 space-y-2">
-              <button className="w-full px-4 py-2 text-sm font-medium text-[#1A1A1A] border border-gray-400">
-                CONTACT US
-              </button>
-              <button className="w-full px-4 py-2 text-sm font-medium text-white bg-[#002DFF]">
+            <div className="pt-4">
+              <button className="w-full px-4 py-2.5 text-sm font-semibold text-white bg-sanctum-cyan-500">
                 SCHEDULE ASSESSMENT
               </button>
             </div>
