@@ -61,11 +61,11 @@ export default function SanctumScore() {
         {/* Main Headings */}
         <div className="text-center mb-6">
           <div className="inline-flex items-center space-x-2 mb-4">
-            <Award className="w-8 h-8 text-sanctum-cyan-500" />
-            <span className="text-sm font-semibold text-sanctum-cyan-600 uppercase tracking-wider">Proprietary Algorithm</span>
+            <Award className="w-8 h-8 text-sanctum-cyan-400" />
+            <span className="text-sm font-semibold text-sanctum-cyan-500 uppercase tracking-wider">Proprietary Algorithm</span>
           </div>
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
-            <span className="text-sanctum-cyan-600">The Sanctum Score</span><sup className="text-2xl text-sanctum-cyan-600">™</sup>
+            <span className="text-sanctum-cyan-500">The Sanctum Score</span><sup className="text-2xl text-sanctum-cyan-500">™</sup>
           </h2>
           <p className="text-xl md:text-2xl text-[#6B7280] font-light max-w-4xl mx-auto leading-relaxed">
             A comprehensive health rating for any UK property, distilled into a single,
@@ -76,10 +76,10 @@ export default function SanctumScore() {
         {/* Featured Badge */}
         <div className="flex justify-center mb-12">
           <div className="inline-flex items-center space-x-2 px-6 py-3 bg-gradient-to-r from-sanctum-cyan-400/10 to-sanctum-cyan-300/10 border border-sanctum-cyan-500/20 rounded-full">
-            <svg className="w-5 h-5 text-sanctum-cyan-500" fill="currentColor" viewBox="0 0 20 20">
+            <svg className="w-5 h-5 text-sanctum-cyan-400" fill="currentColor" viewBox="0 0 20 20">
               <path fillRule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
             </svg>
-            <span className="text-sm font-semibold text-sanctum-cyan-600">UK's First Standardised Home Health Metric</span>
+            <span className="text-sm font-semibold text-sanctum-cyan-500">UK's First Standardised Home Health Metric</span>
           </div>
         </div>
 
@@ -130,13 +130,13 @@ export default function SanctumScore() {
                   </svg>
                   <div className="absolute inset-0 flex items-center justify-center">
                     <div className="text-center">
-                      <div className="text-6xl font-bold bg-gradient-to-br from-sanctum-cyan-500 to-sanctum-cyan-400 bg-clip-text text-transparent mb-2">
+                      <div className="text-6xl font-bold text-sanctum-cyan-400 mb-2" style={{ textShadow: '0 2px 4px rgba(74, 144, 164, 0.2)' }}>
                         {animatedScore}
                       </div>
-                      <div className="text-xs font-semibold text-[#6B7280] uppercase tracking-widest">
+                      <div className="text-xs font-semibold text-[#4A5568] uppercase tracking-widest">
                         Sanctum Score
                       </div>
-                      <div className="text-xs text-[#9CA3AF] mt-1">out of 100</div>
+                      <div className="text-xs text-[#6B7280] mt-1 font-medium">out of 100</div>
                     </div>
                   </div>
                 </div>
@@ -166,7 +166,7 @@ export default function SanctumScore() {
               {/* Key Benefit Callout */}
               <div className="bg-gradient-to-r from-sanctum-cyan-400/5 to-sanctum-cyan-300/5 border-l-4 border-sanctum-cyan-500 p-4 rounded-r-lg">
                 <p className="text-sm font-medium text-[#1A1A1A]">
-                  <span className="text-sanctum-cyan-600 font-semibold">For Property Buyers:</span> Use your Sanctum Score to negotiate purchase price, plan renovation budgets, or make informed decisions about properties with environmental issues.
+                  <span className="text-sanctum-cyan-500 font-semibold">For Property Buyers:</span> Use your Sanctum Score to negotiate purchase price, plan renovation budgets, or make informed decisions about properties with environmental issues.
                 </p>
               </div>
             </div>
@@ -305,7 +305,7 @@ export default function SanctumScore() {
         {/* Priority Recommendations */}
         <div className="bg-gradient-to-r from-sanctum-cyan-400/10 to-sanctum-cyan-300/5 border-l-4 border-sanctum-cyan-500 rounded-r-xl p-8 mb-12">
           <h4 className="text-lg font-bold text-[#1A1A1A] mb-4 flex items-center">
-            <AlertTriangle className="w-5 h-5 mr-2 text-sanctum-cyan-600" />
+            <AlertTriangle className="w-5 h-5 mr-2 text-sanctum-cyan-500" />
             Priority Recommendations for This Property
           </h4>
           <ul className="space-y-3 text-sm text-[#4B5563]">

@@ -3,7 +3,7 @@ import { ArrowRight, CheckCircle } from 'lucide-react';
 
 export default function FinalCTA() {
   return (
-    <section className="py-24 bg-gradient-to-br from-[#002DFF] via-[#0040FF] to-[#4D7FFF] relative overflow-hidden">
+    <section className="py-24 bg-gradient-to-br from-sanctum-cyan-600 via-sanctum-cyan-500 to-sanctum-cyan-400 relative overflow-hidden">
       {/* Decorative Elements */}
       <div className="absolute top-0 left-0 w-full h-full opacity-10">
         <div className="absolute top-10 left-10 w-64 h-64 bg-white rounded-full blur-3xl"></div>
@@ -48,11 +48,11 @@ export default function FinalCTA() {
 
         {/* CTA Buttons */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-          <button className="group px-10 py-5 text-base font-bold text-[#002DFF] bg-white hover:bg-gray-50 transition-all duration-300 transform hover:scale-105 shadow-2xl rounded-lg inline-flex items-center">
+          <button className="group px-10 py-5 text-base font-bold text-sanctum-cyan-600 bg-white hover:bg-gray-50 transition-all duration-300 transform hover:scale-105 shadow-2xl rounded-lg inline-flex items-center">
             <span>BOOK YOUR HOME SURVEY NOW</span>
             <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
           </button>
-          <button className="px-10 py-5 text-base font-semibold text-white border-2 border-white hover:bg-white hover:text-[#002DFF] transition-all duration-300 rounded-lg">
+          <button className="px-10 py-5 text-base font-semibold text-white border-2 border-white hover:bg-white hover:text-sanctum-cyan-600 transition-all duration-300 rounded-lg">
             VIEW SAMPLE REPORT
           </button>
         </div>

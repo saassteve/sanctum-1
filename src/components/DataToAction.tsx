@@ -7,10 +7,10 @@ export default function DataToAction() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <div className="inline-flex items-center space-x-2 mb-4">
-            <span className="text-sm font-semibold text-sanctum-cyan-600 uppercase tracking-wider">Our Process</span>
+            <span className="text-sm font-semibold text-sanctum-cyan-500 uppercase tracking-wider">Our Process</span>
           </div>
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
-            <span className="text-sanctum-cyan-600">How It</span>{' '}
+            <span className="text-sanctum-cyan-500">How It</span>{' '}
             <span className="text-[#1A1A1A]">Works</span>
           </h2>
           <p className="text-xl md:text-2xl text-[#6B7280] font-light max-w-4xl mx-auto">
@@ -30,7 +30,7 @@ export default function DataToAction() {
               </div>
             </div>
             <div className="mb-4">
-              <span className="inline-block px-3 py-1 text-xs font-bold text-white bg-sanctum-cyan-500 rounded-full">STEP 1</span>
+              <span className="inline-block px-3 py-1 text-xs font-bold text-white bg-sanctum-cyan-400 rounded-full">STEP 1</span>
             </div>
             <h3 className="text-xl font-bold text-[#1A1A1A] mb-4 uppercase tracking-wide">
               Book Your Survey
@@ -48,7 +48,7 @@ export default function DataToAction() {
               </div>
             </div>
             <div className="mb-4">
-              <span className="inline-block px-3 py-1 text-xs font-bold text-white bg-sanctum-cyan-500 rounded-full">STEP 2</span>
+              <span className="inline-block px-3 py-1 text-xs font-bold text-white bg-sanctum-cyan-400 rounded-full">STEP 2</span>
             </div>
             <h3 className="text-xl font-bold text-[#1A1A1A] mb-4 uppercase tracking-wide">
               On-Site Assessment
@@ -66,7 +66,7 @@ export default function DataToAction() {
               </div>
             </div>
             <div className="mb-4">
-              <span className="inline-block px-3 py-1 text-xs font-bold text-white bg-sanctum-cyan-500 rounded-full">STEP 3</span>
+              <span className="inline-block px-3 py-1 text-xs font-bold text-white bg-sanctum-cyan-400 rounded-full">STEP 3</span>
             </div>
             <h3 className="text-xl font-bold text-[#1A1A1A] mb-4 uppercase tracking-wide">
               48-Hour Analysis
@@ -84,7 +84,7 @@ export default function DataToAction() {
               </div>
             </div>
             <div className="mb-4">
-              <span className="inline-block px-3 py-1 text-xs font-bold text-white bg-sanctum-cyan-500 rounded-full">STEP 4</span>
+              <span className="inline-block px-3 py-1 text-xs font-bold text-white bg-sanctum-cyan-400 rounded-full">STEP 4</span>
             </div>
             <h3 className="text-xl font-bold text-[#1A1A1A] mb-4 uppercase tracking-wide">
               Make Your Decision
@@ -99,17 +99,17 @@ export default function DataToAction() {
         <div className="mt-16 bg-white rounded-2xl p-8 md:p-12 shadow-xl border border-gray-100">
           <div className="grid md:grid-cols-3 gap-8 text-center">
             <div>
-              <div className="text-3xl font-bold text-sanctum-cyan-500 mb-2">3-4 Hours</div>
+              <div className="text-3xl font-bold text-sanctum-cyan-400 mb-2">3-4 Hours</div>
               <div className="text-sm font-semibold text-[#1A1A1A] uppercase tracking-wide mb-1">Survey Duration</div>
               <p className="text-xs text-[#6B7280]">Non-invasive testing</p>
             </div>
             <div>
-              <div className="text-3xl font-bold text-sanctum-cyan-500 mb-2">48 Hours</div>
+              <div className="text-3xl font-bold text-sanctum-cyan-400 mb-2">48 Hours</div>
               <div className="text-sm font-semibold text-[#1A1A1A] uppercase tracking-wide mb-1">Report Delivery</div>
               <p className="text-xs text-[#6B7280]">Fast turnaround time</p>
             </div>
             <div>
-              <div className="text-3xl font-bold text-sanctum-cyan-500 mb-2">5 Categories</div>
+              <div className="text-3xl font-bold text-sanctum-cyan-400 mb-2">5 Categories</div>
               <div className="text-sm font-semibold text-[#1A1A1A] uppercase tracking-wide mb-1">Environmental Factors</div>
               <p className="text-xs text-[#6B7280]">Comprehensive assessment</p>
             </div>

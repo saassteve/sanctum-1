@@ -46,16 +46,16 @@ export default function Header({ isMenuOpen, setIsMenuOpen }: HeaderProps) {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-10">
-            <button onClick={() => handleNavigation('bio-environmental')} className="text-sm font-medium text-[#1A1A1A] hover:text-sanctum-cyan-500 transition-colors">
+            <button onClick={() => handleNavigation('bio-environmental')} className="text-sm font-medium text-[#1A1A1A] hover:text-sanctum-cyan-400 transition-colors">
               DIAGNOSTICS
             </button>
-            <button onClick={() => handleNavigation('sanctum-score')} className="text-sm font-medium text-[#1A1A1A] hover:text-sanctum-cyan-500 transition-colors">
+            <button onClick={() => handleNavigation('sanctum-score')} className="text-sm font-medium text-[#1A1A1A] hover:text-sanctum-cyan-400 transition-colors">
               SCORING
             </button>
-            <button onClick={() => handleNavigation('blueprint')} className="text-sm font-medium text-[#1A1A1A] hover:text-sanctum-cyan-500 transition-colors">
+            <button onClick={() => handleNavigation('blueprint')} className="text-sm font-medium text-[#1A1A1A] hover:text-sanctum-cyan-400 transition-colors">
               PROCESS
             </button>
-            <button onClick={() => { navigate('/about'); window.scrollTo(0, 0); setIsMenuOpen(false); }} className="text-sm font-medium text-[#1A1A1A] hover:text-sanctum-cyan-500 transition-colors">
+            <button onClick={() => { navigate('/about'); window.scrollTo(0, 0); setIsMenuOpen(false); }} className="text-sm font-medium text-[#1A1A1A] hover:text-sanctum-cyan-400 transition-colors">
               ABOUT
             </button>
           </nav>
