@@ -68,8 +68,8 @@ export default function SanctumScore() {
             The Sanctum Score<sup className="text-2xl">™</sup>
           </h2>
           <p className="text-xl md:text-2xl text-[#6B7280] font-light max-w-4xl mx-auto leading-relaxed">
-            A comprehensive health rating for any UK property, distilled into a single, 
-            actionable score. Make confident property decisions backed by science.
+            A comprehensive health rating for any UK property, distilled into a single,
+            actionable score. Make informed property decisions backed by measured data.
           </p>
         </div>
 
@@ -158,16 +158,15 @@ export default function SanctumScore() {
                 Understanding Your Property's Score
               </h3>
               <p className="text-[#6B7280] leading-relaxed mb-6">
-                The Sanctum Score™ is calculated using proprietary algorithms that analyse over 200 
-                environmental factors specific to UK properties. Each category is weighted based on 
-                peer-reviewed research and clinical data to provide an objective health assessment 
-                before you commit to a purchase.
+                The Sanctum Score™ is calculated using proprietary algorithms that analyse over 200
+                environmental factors specific to UK properties. Each category is weighted to provide
+                an objective health assessment before you commit to a purchase.
               </p>
               
               {/* Key Benefit Callout */}
               <div className="bg-gradient-to-r from-sanctum-cyan-400/5 to-sanctum-cyan-300/5 border-l-4 border-sanctum-cyan-500 p-4 rounded-r-lg">
                 <p className="text-sm font-medium text-[#1A1A1A]">
-                  <span className="text-sanctum-cyan-600 font-semibold">For Property Buyers:</span> Use your Sanctum Score to negotiate purchase price, plan renovation budgets, or walk away from properties with hidden environmental issues.
+                  <span className="text-sanctum-cyan-600 font-semibold">For Property Buyers:</span> Use your Sanctum Score to negotiate purchase price, plan renovation budgets, or make informed decisions about properties with environmental issues.
                 </p>
               </div>
             </div>
@@ -179,7 +178,7 @@ export default function SanctumScore() {
                 <div className="text-center p-6 bg-gradient-to-br from-green-50 to-green-100 rounded-xl border-2 border-green-200 shadow-sm">
                   <div className="text-3xl font-bold text-green-700 mb-2">90-100</div>
                   <div className="text-xs font-semibold text-green-800 uppercase tracking-wider">Optimal Health</div>
-                  <p className="text-xs text-green-700 mt-2">Excellent property condition</p>
+                  <p className="text-xs text-green-700 mt-2">Optimal property condition</p>
                 </div>
                 <div className="text-center p-6 bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl border-2 border-blue-200 shadow-sm">
                   <div className="text-3xl font-bold text-blue-700 mb-2">80-89</div>
@@ -312,7 +311,7 @@ export default function SanctumScore() {
           <ul className="space-y-3 text-sm text-[#4B5563]">
             <li className="flex items-start space-x-3">
               <span className="text-red-600 font-bold mt-0.5">1.</span>
-              <span><span className="font-semibold text-[#1A1A1A]">High Priority:</span> Replace synthetic carpet in bedrooms with natural flooring to reduce VOC exposure (Material Toxicity: 61/100)</span>
+              <span><span className="font-semibold text-[#1A1A1A]">High Priority:</span> Consider replacing synthetic carpet in bedrooms with natural flooring to reduce VOC exposure (Material Toxicity: 61/100)</span>
             </li>
             <li className="flex items-start space-x-3">
               <span className="text-amber-600 font-bold mt-0.5">2.</span>

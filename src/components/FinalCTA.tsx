@@ -25,8 +25,8 @@ export default function FinalCTA() {
         
         {/* Subheading */}
         <p className="text-xl md:text-2xl text-white/90 font-light mb-12 max-w-3xl mx-auto leading-relaxed">
-          Join forward-thinking UK property buyers who use scientific data to make 
-          informed decisions about their most important investment.
+          Join UK property buyers who use measured environmental data to make
+          informed decisions about property purchases.
         </p>
 
         {/* Key Benefits */}
@@ -59,7 +59,7 @@ export default function FinalCTA() {
         {/* Trust Elements */}
         <div className="mt-12 pt-8 border-t border-white/20">
           <p className="text-sm text-white/80 mb-4">
-            Trusted by property buyers across the UK
+            Used by property buyers across the UK
           </p>
           <div className="flex flex-wrap justify-center gap-8 text-white/70 text-xs">
             <div className="flex items-center space-x-2">

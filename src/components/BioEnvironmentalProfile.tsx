@@ -26,9 +26,9 @@ export default function BioEnvironmentalProfile() {
               Full Bio-Environmental Assessment
             </h2>
             <p className="text-xl text-[#6B7280] font-light leading-relaxed mb-8">
-              Before you purchase a property in the UK, get a comprehensive diagnostic assessment 
-              of every environmental factor that could impact your family's health. Our five-pillar 
-              evaluation provides the data you need to make informed decisions.
+              Before you purchase a property in the UK, get a comprehensive diagnostic assessment
+              of environmental factors that could impact your family's health. Our five-pillar
+              evaluation provides measured data to support informed decisions.
             </p>
             
             {/* Benefits Callout */}
@@ -81,9 +81,9 @@ export default function BioEnvironmentalProfile() {
                     Atmospheric Purity
                   </h3>
                   <p className="text-[#6B7280] font-light leading-relaxed mb-4">
-                    Professional air quality testing covering PM2.5, PM10, VOCs, CO₂, formaldehyde, radon, 
-                    mould spores, and common allergens. Identifies respiratory irritants often missed by 
-                    standard property surveys.
+                    Professional air quality testing covering PM2.5, PM10, VOCs, CO₂, formaldehyde, radon,
+                    mould spores, and common allergens. Measures respiratory irritants that standard
+                    property surveys do not assess.
                   </p>
                   <a href="/atmospheric-purity-diagnostic" className="inline-flex items-center text-sm font-semibold text-sanctum-cyan-600 hover:text-[#1A1A1A] transition-colors">
                     Learn More About Testing
@@ -111,8 +111,8 @@ export default function BioEnvironmentalProfile() {
                     Hydration Integrity
                   </h3>
                   <p className="text-[#6B7280] font-light leading-relaxed mb-4">
-                    Laboratory-grade water quality analysis testing for lead, copper, nitrates, chlorine, 
-                    fluoride, heavy metals, microplastics, and microbial contamination. Critical for UK 
+                    Laboratory-grade water quality analysis testing for lead, copper, nitrates, chlorine,
+                    fluoride, heavy metals, microplastics, and microbial contamination. Relevant for UK
                     properties with older plumbing or well water.
                   </p>
                   <a href="/hydration-integrity-diagnostic" className="inline-flex items-center text-sm font-semibold text-sanctum-cyan-600 hover:text-[#1A1A1A] transition-colors">
@@ -141,8 +141,8 @@ export default function BioEnvironmentalProfile() {
                     Electromagnetic Hygiene
                   </h3>
                   <p className="text-[#6B7280] font-light leading-relaxed mb-4">
-                    Comprehensive EMF mapping measuring RF radiation, magnetic fields, electric fields, 
-                    and dirty electricity. Evaluates proximity to power lines, substations, mobile towers, 
+                    Comprehensive EMF mapping measuring RF radiation, magnetic fields, electric fields,
+                    and dirty electricity. Evaluates proximity to power lines, substations, mobile towers,
                     and identifies high-exposure zones within the property.
                   </p>
                   <a href="/electromagnetic-hygiene-diagnostic" className="inline-flex items-center text-sm font-semibold text-sanctum-cyan-600 hover:text-[#1A1A1A] transition-colors">
@@ -171,9 +171,9 @@ export default function BioEnvironmentalProfile() {
                     Circadian Alignment
                   </h3>
                   <p className="text-[#6B7280] font-light leading-relaxed mb-4">
-                    Light spectrum analysis measuring natural daylight exposure, blue light levels, and 
-                    artificial lighting quality. Evaluates window placement, orientation, and how the 
-                    property supports natural sleep-wake cycles.
+                    Light spectrum analysis measuring natural daylight exposure, blue light levels, and
+                    artificial lighting quality. Evaluates window placement, orientation, and how the
+                    property design relates to natural sleep-wake cycles.
                   </p>
                   <a href="/circadian-alignment-diagnostic" className="inline-flex items-center text-sm font-semibold text-sanctum-cyan-600 hover:text-[#1A1A1A] transition-colors">
                     Learn More About Testing
@@ -204,8 +204,8 @@ export default function BioEnvironmentalProfile() {
                     Material Toxicity
                   </h3>
                   <p className="text-[#6B7280] font-light leading-relaxed mb-4">
-                    Advanced chemical analysis of building materials, paints, carpets, insulation, and 
-                    furnishings for toxic compounds. Tests for asbestos, lead paint, flame retardants, 
+                    Advanced chemical analysis of building materials, paints, carpets, insulation, and
+                    furnishings for toxic compounds. Tests for asbestos, lead paint, flame retardants,
                     phthalates, and VOC off-gassing from synthetic materials.
                   </p>
                   <a href="/material-toxicity-diagnostic" className="inline-flex items-center text-sm font-semibold text-sanctum-cyan-600 hover:text-[#1A1A1A] transition-colors">

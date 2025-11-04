@@ -13,7 +13,7 @@ export default function DataToAction() {
             How It Works
           </h2>
           <p className="text-xl md:text-2xl text-[#6B7280] font-light max-w-4xl mx-auto">
-            From property viewing to Sanctum Score delivery—we make it simple
+            From property viewing to Sanctum Score delivery, we make it simple
           </p>
         </div>
 
@@ -35,7 +35,7 @@ export default function DataToAction() {
               Book Your Survey
             </h3>
             <p className="text-[#6B7280] font-light leading-relaxed">
-              Schedule your pre-purchase home health survey online. We'll coordinate with your property viewing schedule and estate agent for convenient access.
+              Schedule your pre-purchase home health survey online. We will coordinate with your property viewing schedule and estate agent for convenient access.
             </p>
           </div>
 
@@ -71,7 +71,7 @@ export default function DataToAction() {
               48-Hour Analysis
             </h3>
             <p className="text-[#6B7280] font-light leading-relaxed">
-              Our team analyses all data and calculates your property's Sanctum Score. Results are compiled into a comprehensive, easy-to-understand report.
+              Our team analyses all data and calculates your property's Sanctum Score. Results are compiled into a comprehensive report.
             </p>
           </div>
 

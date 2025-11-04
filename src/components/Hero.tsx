@@ -46,9 +46,9 @@ export default function Hero() {
 
         {/* Subheading with better contrast */}
         <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-white/95 font-light leading-relaxed mb-8 sm:mb-10 max-w-2xl drop-shadow-sm">
-          The UK's first comprehensive home health survey for property buyers. 
-          Get your proprietary <span className="font-semibold text-white">Sanctum Score™</span> and 
-          negotiate with confidence—backed by scientific data, delivered in 48 hours.
+          Comprehensive home health surveys for UK property buyers.
+          Get your <span className="font-semibold text-white">Sanctum Score™</span> and
+          negotiate with confidence. Backed by measured data, delivered in 48 hours.
         </p>
 
         {/* Key Benefits with improved styling */}
@@ -69,7 +69,7 @@ export default function Hero() {
             <svg className="w-5 h-5 text-sanctum-cyan-300" fill="currentColor" viewBox="0 0 20 20">
               <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
             </svg>
-            <span className="text-sm sm:text-base font-light text-white/95">Negotiation Leverage</span>
+            <span className="text-sm sm:text-base font-light text-white/95">Negotiation Support</span>
           </div>
         </div>
 
@@ -94,7 +94,7 @@ export default function Hero() {
           <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
             <path fillRule="evenodd" d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
           </svg>
-          <span className="font-light">Trusted by property buyers across England, Scotland, and Wales</span>
+          <span className="font-light">Used by property buyers across England, Scotland, and Wales</span>
         </div>
       </div>
     </section>

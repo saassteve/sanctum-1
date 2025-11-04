@@ -19,27 +19,26 @@ export default function AboutUsIntro() {
 
         {/* Paragraph */}
         <p className="text-xl text-[#6B7280] font-light leading-relaxed mb-8 max-w-3xl mx-auto">
-          Sanctum was born from a costly mistake. After purchasing a property that looked perfect 
-          on the surface, we discovered—too late—that hidden environmental issues were causing 
-          unexplained health problems. Standard property surveys completely missed these critical 
-          factors. We created the pre-purchase home health survey we desperately needed but couldn't 
-          find—one that gives UK property buyers the complete picture, backed by our proprietary 
-          Sanctum Score™, before they commit to the biggest investment of their life.
+          Sanctum was created after purchasing a property that appeared ideal on the surface,
+          but later revealed hidden environmental issues. Standard property surveys did not assess
+          these factors. We created the pre-purchase home health survey to give UK property buyers
+          comprehensive environmental data, backed by our Sanctum Score™, before they commit to
+          a property purchase.
         </p>
 
         {/* Stats */}
         <div className="grid md:grid-cols-3 gap-8 mb-12 max-w-2xl mx-auto">
           <div>
-            <div className="text-3xl font-bold text-[#002DFF] mb-2">60%</div>
-            <p className="text-sm text-[#6B7280]">of UK properties have hidden environmental issues</p>
+            <div className="text-3xl font-bold text-[#002DFF] mb-2">200+</div>
+            <p className="text-sm text-[#6B7280]">environmental data points measured</p>
           </div>
           <div>
-            <div className="text-3xl font-bold text-[#002DFF] mb-2">£15k+</div>
-            <p className="text-sm text-[#6B7280]">average cost of post-purchase remediation</p>
+            <div className="text-3xl font-bold text-[#002DFF] mb-2">48 Hours</div>
+            <p className="text-sm text-[#6B7280]">report delivery time</p>
           </div>
           <div>
-            <div className="text-3xl font-bold text-[#002DFF] mb-2">100%</div>
-            <p className="text-sm text-[#6B7280]">preventable with pre-purchase assessment</p>
+            <div className="text-3xl font-bold text-[#002DFF] mb-2">5 Categories</div>
+            <p className="text-sm text-[#6B7280]">comprehensive environmental assessment</p>
           </div>
         </div>
 

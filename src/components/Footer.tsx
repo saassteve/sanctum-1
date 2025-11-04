@@ -16,8 +16,8 @@ export default function Footer() {
               />
             </div>
             <p className="text-white/70 font-light leading-relaxed max-w-md mb-6">
-              The UK's first comprehensive home health survey service for property buyers. 
-              Get your proprietary Sanctum Score and make informed purchase decisions backed by science.
+              Comprehensive home health survey service for UK property buyers.
+              Get your Sanctum Score and make informed purchase decisions backed by measured data.
             </p>
             <div className="space-y-2">
               <div className="flex items-center space-x-3 text-white/70">

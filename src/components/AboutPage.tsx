@@ -28,10 +28,10 @@ export default function AboutPage() {
               Don't Buy Blind: Know Your Property's Health Before You Commit
             </h1>
             <p className="text-xl text-[#6B7280] font-light leading-relaxed max-w-3xl mx-auto">
-              We believe every UK property buyer deserves to know the full health picture before making 
-              the biggest investment of their life. Sanctum provides comprehensive pre-purchase home 
-              health surveys, delivering clarity through our proprietary Sanctum Score™—so you can 
-              negotiate confidently, budget accurately, or walk away with peace of mind.
+              We believe every UK property buyer deserves to know the full health picture before making
+              a significant property investment. Sanctum provides comprehensive pre-purchase home
+              health surveys, delivering clarity through our proprietary Sanctum Score™ so you can
+              negotiate confidently, budget accurately, or make informed decisions with confidence.
             </p>
           </div>
         </section>
@@ -45,25 +45,23 @@ export default function AboutPage() {
             
             <div className="space-y-8 text-lg text-[#6B7280] font-light leading-relaxed">
               <p>
-                Our story began not with a business plan, but with a costly mistake. After purchasing 
-                what appeared to be the perfect property, we discovered too late that environmental 
-                factors missed by standard surveys were causing serious health issues. The financial 
-                and emotional toll was devastating.
+                Our story began with a property purchase. After purchasing what appeared to be an ideal
+                property, we discovered that environmental factors not assessed by standard surveys were
+                causing health issues. This experience highlighted the need for comprehensive environmental
+                assessments.
               </p>
               
               <p>
-                That experience drove us to create the service we desperately needed but couldn't find—a 
-                comprehensive pre-purchase home health assessment for UK property buyers. We invested in 
-                professional-grade instrumentation, studied building biology and environmental health, 
-                and developed our proprietary Sanctum Score™ algorithm to distill complex data into 
-                clear, actionable insights.
+                That experience drove us to create a comprehensive pre-purchase home health assessment
+                for UK property buyers. We invested in professional-grade instrumentation, studied building
+                biology and environmental health, and developed our proprietary Sanctum Score™ algorithm
+                to distil complex data into clear, actionable insights.
               </p>
               
               <p>
-                Today, we help UK property buyers avoid the same mistake we made. Our mission is simple: 
-                provide the complete health picture before you sign, so you can make informed decisions, 
-                negotiate from a position of knowledge, and invest in properties that truly support your 
-                well-being.
+                Today, we help UK property buyers assess environmental factors before purchase. Our mission
+                is to provide comprehensive health data before you sign, so you can make informed decisions,
+                negotiate from a position of knowledge, and choose properties that support your well-being.
               </p>
             </div>
           </div>
@@ -90,9 +88,9 @@ export default function AboutPage() {
                   Scientific Rigour
                 </h3>
                 <p className="text-[#6B7280] font-light leading-relaxed">
-                  We don't guess. Every pre-purchase assessment uses lab-grade instrumentation to measure 
-                  over 200 environmental factors. Our Sanctum Score™ is calculated from quantitative data 
-                  and peer-reviewed research, giving you objective evidence for property decisions.
+                  Every pre-purchase assessment uses lab-grade instrumentation to measure over 200
+                  environmental factors. Our Sanctum Score™ is calculated from quantitative data,
+                  giving you objective evidence for property decisions.
                 </p>
               </div>
 
@@ -107,9 +105,9 @@ export default function AboutPage() {
                   Pragmatic Guidance
                 </h3>
                 <p className="text-[#6B7280] font-light leading-relaxed">
-                  We deliver clarity, not confusion. Our reports translate complex environmental data into 
-                  a simple, prioritised action plan. Use it to negotiate purchase price, plan your renovation 
-                  budget, or make the confident decision to walk away.
+                  We deliver clarity through our reports. Complex environmental data is translated into
+                  a simple, prioritised action plan. Use it to negotiate purchase price, plan your renovation
+                  budget, or make informed decisions.
                 </p>
               </div>
 
@@ -124,9 +122,9 @@ export default function AboutPage() {
                   Buyer Empowerment
                 </h3>
                 <p className="text-[#6B7280] font-light leading-relaxed">
-                  Knowledge is power in property negotiations. We arm you with comprehensive data that 
-                  standard surveys miss, ensuring you make the biggest investment of your life with 
-                  complete confidence and full transparency.
+                  Knowledge supports better property negotiations. We provide comprehensive data that
+                  standard surveys do not assess, helping you make significant property investments with
+                  greater confidence and full transparency.
                 </p>
               </div>
             </div>

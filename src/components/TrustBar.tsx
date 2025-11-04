@@ -33,7 +33,7 @@ export default function TrustBar() {
               Testing Equipment
             </div>
             <div className="text-sm text-[#6B7280] font-light">
-              Professional scientific instrumentation used by building biologists
+              Professional scientific instrumentation for building assessments
             </div>
           </div>
 

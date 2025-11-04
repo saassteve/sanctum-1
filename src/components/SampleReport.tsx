@@ -28,9 +28,9 @@ export default function SampleReport() {
               Your Pre-Purchase Property Health Report
             </h1>
             <p className="text-xl text-[#6B7280] font-light leading-relaxed max-w-3xl mx-auto">
-              Before you commit to a UK property purchase, get the complete health picture. Our comprehensive 
-              assessment translates complex environmental data into your proprietary Sanctum Score™ and a clear, 
-              actionable plan. See exactly what you're buying—and what it might cost to fix.
+              Before you commit to a UK property purchase, get the complete health picture. Our comprehensive
+              assessment translates complex environmental data into your Sanctum Score™ and a clear,
+              actionable plan. See exactly what you are buying and what it might cost to remedy.
             </p>
           </div>
         </section>
@@ -87,11 +87,11 @@ export default function SampleReport() {
               {/* Explanatory Text */}
               <div className="order-1 lg:order-2">
                 <p className="text-lg text-[#6B7280] font-light leading-relaxed">
-                  Every property receives a single, easy-to-understand Sanctum Score™ that gives you an 
-                  immediate snapshot of its overall environmental health. This proprietary rating distills 
-                  over 200 data points from our comprehensive pre-purchase survey into one clear number. 
-                  Use it to negotiate price, budget for improvements, or make the confident decision to 
-                  walk away—all before you sign.
+                  Every property receives a single, easy-to-understand Sanctum Score™ that provides an
+                  immediate snapshot of its overall environmental health. This proprietary rating distils
+                  over 200 data points from our comprehensive pre-purchase survey into one clear number.
+                  Use it to negotiate price, budget for improvements, or make informed decisions,
+                  all before you sign.
                 </p>
               </div>
             </div>
@@ -167,10 +167,10 @@ export default function SampleReport() {
                   What's Really in the Air You'll Breathe
                 </h3>
                 <p className="text-[#6B7280] font-light leading-relaxed">
-                  Before you buy, know exactly what you're breathing. We measure specific airborne contaminants 
-                  like Volatile Organic Compounds (VOCs) from furniture, building materials, and particulate 
-                  matter (PM₂.₅) that can impact respiratory health. Every measurement is compared to scientific 
-                  safety guidelines and translated into clear cost estimates—giving you powerful leverage in 
+                  Before you buy, know exactly what you are breathing. We measure specific airborne contaminants
+                  like Volatile Organic Compounds (VOCs) from furniture, building materials, and particulate
+                  matter (PM₂.₅) that can impact respiratory health. Every measurement is compared to established
+                  safety guidelines and translated into clear cost estimates, giving you information to support
                   price negotiations.
                 </p>
               </div>
@@ -188,11 +188,10 @@ export default function SampleReport() {
                   Hidden EMF Issues Revealed
                 </h3>
                 <p className="text-[#6B7280] font-light leading-relaxed">
-                  Wiring errors and electromagnetic fields are invisible but measurable. Before you purchase, 
-                  we map the AC electric and magnetic fields throughout the property, particularly in sleeping 
-                  areas. Our report identifies legitimate exposure risks and provides clear remediation costs. 
-                  Discover if that "perfect bedroom" requires £500 in shielding—or £5,000 in rewiring—before 
-                  you commit.
+                  Wiring errors and electromagnetic fields are invisible but measurable. Before you purchase,
+                  we map the AC electric and magnetic fields throughout the property, particularly in sleeping
+                  areas. Our report identifies measured exposure levels and provides clear remediation costs.
+                  Discover if that property requires additional work before you commit.
                 </p>
               </div>
 
@@ -262,9 +261,9 @@ export default function SampleReport() {
                 Your Negotiation Roadmap
               </h2>
               <p className="text-lg text-[#6B7280] font-light leading-relaxed max-w-2xl mx-auto">
-                Every report includes a prioritised action plan with cost estimates. Use this intelligence 
-                to negotiate the purchase price, budget for improvements, or make an informed decision to 
-                walk away. Knowledge is leverage.
+                Every report includes a prioritised action plan with cost estimates. Use this information
+                to negotiate the purchase price, budget for improvements, or make informed decisions.
+                Knowledge supports better outcomes.
               </p>
             </div>
 
@@ -355,7 +354,7 @@ export default function SampleReport() {
               Get Your Property's Sanctum Score Before You Sign
             </h2>
             <p className="text-xl text-[#6B7280] font-light mb-12 max-w-2xl mx-auto">
-              Don't make the biggest investment of your life blind. Book your pre-purchase home health 
+              Make informed property decisions. Book your pre-purchase home health
               survey today and negotiate from a position of knowledge.
             </p>
             <button className="px-12 py-4 text-sm font-medium text-white bg-[#002DFF] hover:bg-[#0026CC] transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl">
