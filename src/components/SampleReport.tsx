@@ -25,11 +25,12 @@ export default function SampleReport() {
         <section className="py-16 bg-white">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h1 className="text-4xl md:text-5xl font-light text-[#1A1A1A] mb-8">
-              The Sanctum Report: Clarity in Every Detail
+              Your Pre-Purchase Property Health Report
             </h1>
             <p className="text-xl text-[#6B7280] font-light leading-relaxed max-w-3xl mx-auto">
-              Your home's health data is complex. We translate it into a clear, actionable blueprint for optimal well-being. 
-              Explore our sample report below to see how we turn comprehensive diagnostics into a simple, step-by-step plan.
+              Before you commit to a UK property purchase, get the complete health picture. Our comprehensive 
+              assessment translates complex environmental data into your proprietary Sanctum Score™ and a clear, 
+              actionable plan. See exactly what you're buying—and what it might cost to fix.
             </p>
           </div>
         </section>
@@ -39,7 +40,7 @@ export default function SampleReport() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-light text-[#1A1A1A] mb-6">
-                Your Personalised Health Dashboard
+                Your Sanctum Score™: One Number, Complete Clarity
               </h2>
             </div>
 
@@ -50,11 +51,12 @@ export default function SampleReport() {
                   <div className="flex justify-center mb-6">
                     <FileText className="w-16 h-16 text-[#002DFF]" strokeWidth={1} />
                   </div>
-                  <h3 className="text-2xl font-light text-[#1A1A1A] mb-4">The Williams Family</h3>
+                  <h3 className="text-2xl font-light text-[#1A1A1A] mb-2">Sample Property Report</h3>
+                  <p className="text-sm text-[#6B7280] mb-6">3-Bed Terraced House, Manchester</p>
                   <div className="text-center mb-6">
                     <div className="text-6xl font-light text-[#002DFF] mb-2">78</div>
                     <div className="text-sm font-medium text-[#6B7280] uppercase tracking-wider">
-                      Sanctum Score
+                      Sanctum Score™
                     </div>
                   </div>
                   <div className="space-y-2 text-sm">
@@ -85,11 +87,11 @@ export default function SampleReport() {
               {/* Explanatory Text */}
               <div className="order-1 lg:order-2">
                 <p className="text-lg text-[#6B7280] font-light leading-relaxed">
-                  Every client receives a single, easy-to-understand score that gives them an immediate snapshot 
-                  of their home's overall environmental health. This comprehensive rating distills over 200 data 
-                  points into one clear number, whilst breaking down performance across each critical category. 
-                  Your Sanctum Score becomes the foundation for understanding your home's current state and 
-                  tracking improvements over time.
+                  Every property receives a single, easy-to-understand Sanctum Score™ that gives you an 
+                  immediate snapshot of its overall environmental health. This proprietary rating distills 
+                  over 200 data points from our comprehensive pre-purchase survey into one clear number. 
+                  Use it to negotiate price, budget for improvements, or make the confident decision to 
+                  walk away—all before you sign.
                 </p>
               </div>
             </div>
@@ -152,8 +154,8 @@ export default function SampleReport() {
                   
                   <div className="mt-6 p-3 bg-blue-50 rounded border border-blue-200">
                     <p className="text-xs text-blue-800">
-                      <strong>Key Finding:</strong> Elevated formaldehyde levels detected in master bedroom, 
-                      likely from new furniture. Immediate ventilation recommended.
+                      <strong>Pre-Purchase Finding:</strong> Elevated formaldehyde detected in master bedroom. 
+                      Budget £800-£1,200 for air purification or negotiate £2k off purchase price.
                     </p>
                   </div>
                 </div>
@@ -162,14 +164,14 @@ export default function SampleReport() {
               {/* Explanatory Text */}
               <div>
                 <h3 className="text-2xl font-medium text-[#1A1A1A] mb-4">
-                  Making the Invisible Visible
+                  What's Really in the Air You'll Breathe
                 </h3>
                 <p className="text-[#6B7280] font-light leading-relaxed">
-                  We go beyond basic air filters, measuring specific airborne contaminants like Volatile Organic 
-                  Compounds (VOCs) from furniture and particulate matter (PM₂.₅) that can impact respiratory and 
-                  cognitive health. Our report shows you exactly what's in your air and compares it to scientific 
-                  safety guidelines. Each measurement is contextualised with clear explanations of health impacts 
-                  and specific recommendations for improvement.
+                  Before you buy, know exactly what you're breathing. We measure specific airborne contaminants 
+                  like Volatile Organic Compounds (VOCs) from furniture, building materials, and particulate 
+                  matter (PM₂.₅) that can impact respiratory health. Every measurement is compared to scientific 
+                  safety guidelines and translated into clear cost estimates—giving you powerful leverage in 
+                  price negotiations.
                 </p>
               </div>
             </div>
@@ -183,14 +185,14 @@ export default function SampleReport() {
               {/* Explanatory Text */}
               <div>
                 <h3 className="text-2xl font-medium text-[#1A1A1A] mb-4">
-                  Bringing Clarity to EMFs
+                  Hidden EMF Issues Revealed
                 </h3>
                 <p className="text-[#6B7280] font-light leading-relaxed">
-                  Electromagnetic Fields are a source of confusion and concern. We use precise instrumentation 
-                  to map the AC electric and magnetic fields in your home, particularly in sleeping areas. 
-                  Our report identifies legitimate exposure risks from wiring errors or device placement and 
-                  provides clear, evidence-based mitigation strategies. Every measurement is presented with 
-                  context, helping you understand what matters and what doesn't.
+                  Wiring errors and electromagnetic fields are invisible but measurable. Before you purchase, 
+                  we map the AC electric and magnetic fields throughout the property, particularly in sleeping 
+                  areas. Our report identifies legitimate exposure risks and provides clear remediation costs. 
+                  Discover if that "perfect bedroom" requires £500 in shielding—or £5,000 in rewiring—before 
+                  you commit.
                 </p>
               </div>
 
@@ -242,8 +244,8 @@ export default function SampleReport() {
                   
                   <div className="mt-6 p-3 bg-orange-50 rounded border border-orange-200">
                     <p className="text-xs text-orange-800">
-                      <strong>Priority Action:</strong> Relocate WiFi router 3 metres from desk area. 
-                      Consider ethernet connection for home office.
+                      <strong>Cost Impact:</strong> Wiring remediation estimated at £3,500. Use this in 
+                      negotiations or plan post-purchase budget accordingly.
                     </p>
                   </div>
                 </div>
@@ -257,11 +259,12 @@ export default function SampleReport() {
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-light text-[#1A1A1A] mb-6">
-                Your Prioritised Action Plan
+                Your Negotiation Roadmap
               </h2>
               <p className="text-lg text-[#6B7280] font-light leading-relaxed max-w-2xl mx-auto">
-                Data is useless without a clear plan. The most important part of our report is the prioritised roadmap. 
-                We tell you exactly what to fix first, based on the biggest potential impact to your health and the ease of implementation.
+                Every report includes a prioritised action plan with cost estimates. Use this intelligence 
+                to negotiate the purchase price, budget for improvements, or make an informed decision to 
+                walk away. Knowledge is leverage.
               </p>
             </div>
 
@@ -269,7 +272,7 @@ export default function SampleReport() {
             <div className="bg-[#F7F8FA] rounded-lg border border-gray-200 p-8">
               <div className="flex items-center space-x-3 mb-6">
                 <TrendingUp className="w-6 h-6 text-[#002DFF]" />
-                <h3 className="text-lg font-medium text-[#1A1A1A]">Priority Recommendations</h3>
+                <h3 className="text-lg font-medium text-[#1A1A1A]">Priority Findings & Cost Estimates</h3>
               </div>
               
               <div className="space-y-4">
@@ -279,15 +282,15 @@ export default function SampleReport() {
                   </div>
                   <div className="flex-1">
                     <h4 className="text-sm font-medium text-[#1A1A1A] mb-1">
-                      High Priority: Reduce Formaldehyde Exposure
+                      High Priority: Formaldehyde Mitigation
                     </h4>
                     <p className="text-sm text-[#6B7280] mb-2">
-                      Increase ventilation in master bedroom and consider air purifier with activated carbon filter.
+                      Master bedroom requires immediate ventilation improvements and air purification system.
                     </p>
                     <div className="flex items-center space-x-4 text-xs text-[#6B7280]">
-                      <span>Impact: High</span>
-                      <span>Effort: Low</span>
-                      <span>Cost: £200-500</span>
+                      <span>Health Impact: High</span>
+                      <span>Remediation Cost: £800-£1,200</span>
+                      <span className="text-red-600 font-semibold">Negotiation Leverage: £2,000</span>
                     </div>
                   </div>
                 </div>
@@ -298,15 +301,15 @@ export default function SampleReport() {
                   </div>
                   <div className="flex-1">
                     <h4 className="text-sm font-medium text-[#1A1A1A] mb-1">
-                      Medium Priority: Relocate WiFi Router
+                      Medium Priority: EMF Wiring Issues
                     </h4>
                     <p className="text-sm text-[#6B7280] mb-2">
-                      Move router away from frequently occupied areas, particularly the home office desk.
+                      Home office area shows elevated EMF readings requiring electrical work.
                     </p>
                     <div className="flex items-center space-x-4 text-xs text-[#6B7280]">
-                      <span>Impact: Medium</span>
-                      <span>Effort: Low</span>
-                      <span>Cost: £0-50</span>
+                      <span>Health Impact: Medium</span>
+                      <span>Remediation Cost: £3,000-£4,500</span>
+                      <span className="text-orange-600 font-semibold">Negotiation Leverage: £5,000</span>
                     </div>
                   </div>
                 </div>
@@ -317,17 +320,28 @@ export default function SampleReport() {
                   </div>
                   <div className="flex-1">
                     <h4 className="text-sm font-medium text-[#1A1A1A] mb-1">
-                      Low Priority: Optimise Evening Lighting
+                      Low Priority: Lighting Optimization
                     </h4>
                     <p className="text-sm text-[#6B7280] mb-2">
-                      Install warm-light bulbs (2700K) in bedrooms and consider blue light filtering after sunset.
+                      Install circadian-friendly lighting throughout property for better sleep quality.
                     </p>
                     <div className="flex items-center space-x-4 text-xs text-[#6B7280]">
-                      <span>Impact: Medium</span>
-                      <span>Effort: Medium</span>
-                      <span>Cost: £100-300</span>
+                      <span>Health Impact: Low-Medium</span>
+                      <span>Remediation Cost: £200-£400</span>
+                      <span className="text-blue-600 font-semibold">Optional Upgrade</span>
                     </div>
                   </div>
+                </div>
+
+                <div className="mt-6 p-4 bg-green-50 rounded-lg border-2 border-green-200">
+                  <p className="text-sm font-semibold text-green-800 mb-1">
+                    💡 Negotiation Strategy
+                  </p>
+                  <p className="text-xs text-green-700">
+                    <strong>Total Remediation Cost: £4,000-£6,100</strong><br/>
+                    Recommended negotiation: Reduce purchase price by £7,000 to cover remediation and compensate 
+                    for property condition. Alternatively, request seller remediation before completion.
+                  </p>
                 </div>
               </div>
             </div>
@@ -338,13 +352,14 @@ export default function SampleReport() {
         <section className="py-24 bg-[#F7F8FA]">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 className="text-4xl md:text-5xl font-light text-[#1A1A1A] mb-8">
-              Ready for Your Own Blueprint?
+              Get Your Property's Sanctum Score Before You Sign
             </h2>
             <p className="text-xl text-[#6B7280] font-light mb-12 max-w-2xl mx-auto">
-              Take the first step toward a healthier home. Schedule your no-obligation discovery call today.
+              Don't make the biggest investment of your life blind. Book your pre-purchase home health 
+              survey today and negotiate from a position of knowledge.
             </p>
             <button className="px-12 py-4 text-sm font-medium text-white bg-[#002DFF] hover:bg-[#0026CC] transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl">
-              SCHEDULE AN ASSESSMENT
+              BOOK YOUR PRE-PURCHASE SURVEY
             </button>
           </div>
         </section>

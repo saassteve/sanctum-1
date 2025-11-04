@@ -25,12 +25,13 @@ export default function AboutPage() {
         <section className="py-16 bg-white">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h1 className="text-4xl md:text-5xl font-light text-[#1A1A1A] mb-8">
-              Our Mission: To Engineer Healthier Homes
+              Don't Buy Blind: Know Your Property's Health Before You Commit
             </h1>
             <p className="text-xl text-[#6B7280] font-light leading-relaxed max-w-3xl mx-auto">
-              We believe that true well-being begins in the spaces where we live, sleep, and grow. 
-              Sanctum is dedicated to applying rigorous scientific principles to transform your home 
-              into your greatest health asset.
+              We believe every UK property buyer deserves to know the full health picture before making 
+              the biggest investment of their life. Sanctum provides comprehensive pre-purchase home 
+              health surveys, delivering clarity through our proprietary Sanctum Score™—so you can 
+              negotiate confidently, budget accurately, or walk away with peace of mind.
             </p>
           </div>
         </section>
@@ -39,28 +40,30 @@ export default function AboutPage() {
         <section className="py-16 bg-[#F7F8FA]">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 className="text-3xl md:text-4xl font-light text-[#1A1A1A] mb-12">
-              Our Journey to Clarity
+              Why We Created This Service
             </h2>
             
             <div className="space-y-8 text-lg text-[#6B7280] font-light leading-relaxed">
               <p>
-                Our story began not in a laboratory, but with a series of unexplained health challenges. 
-                Like many, we pursued conventional answers without success, which led to a frustrating 
-                cycle of questions and uncertainty.
+                Our story began not with a business plan, but with a costly mistake. After purchasing 
+                what appeared to be the perfect property, we discovered too late that environmental 
+                factors missed by standard surveys were causing serious health issues. The financial 
+                and emotional toll was devastating.
               </p>
               
               <p>
-                The turning point came with a crucial realisation: the one place we felt safest—our home—was 
-                the primary source of the problem. This discovery launched us on a relentless mission to 
-                understand the science of healthy homes. We immersed ourselves in building biology and 
-                environmental health, consulting with leading specialists and investing in professional-grade 
-                instrumentation to find objective answers.
+                That experience drove us to create the service we desperately needed but couldn't find—a 
+                comprehensive pre-purchase home health assessment for UK property buyers. We invested in 
+                professional-grade instrumentation, studied building biology and environmental health, 
+                and developed our proprietary Sanctum Score™ algorithm to distill complex data into 
+                clear, actionable insights.
               </p>
               
               <p>
-                As we successfully transformed our own environment and experienced profound health improvements, 
-                we knew our personal journey had forged a professional mission: to provide others with the 
-                clear, data-driven, and empathetic guidance we once struggled to find.
+                Today, we help UK property buyers avoid the same mistake we made. Our mission is simple: 
+                provide the complete health picture before you sign, so you can make informed decisions, 
+                negotiate from a position of knowledge, and invest in properties that truly support your 
+                well-being.
               </p>
             </div>
           </div>
@@ -87,8 +90,9 @@ export default function AboutPage() {
                   Scientific Rigour
                 </h3>
                 <p className="text-[#6B7280] font-light leading-relaxed">
-                  We don't guess. Every assessment is based on quantitative data from lab-grade 
-                  instrumentation. Our recommendations are rooted in established environmental health science.
+                  We don't guess. Every pre-purchase assessment uses lab-grade instrumentation to measure 
+                  over 200 environmental factors. Our Sanctum Score™ is calculated from quantitative data 
+                  and peer-reviewed research, giving you objective evidence for property decisions.
                 </p>
               </div>
 
@@ -103,12 +107,13 @@ export default function AboutPage() {
                   Pragmatic Guidance
                 </h3>
                 <p className="text-[#6B7280] font-light leading-relaxed">
-                  We deliver clarity, not confusion. Our reports translate complex data into a simple, 
-                  prioritised action plan that balances health impact with real-world practicality.
+                  We deliver clarity, not confusion. Our reports translate complex environmental data into 
+                  a simple, prioritised action plan. Use it to negotiate purchase price, plan your renovation 
+                  budget, or make the confident decision to walk away.
                 </p>
               </div>
 
-              {/* Client Empowerment */}
+              {/* Buyer Empowerment */}
               <div className="text-center">
                 <div className="flex items-center justify-center mb-6">
                   <div className="w-16 h-16 bg-[#002DFF]/10 rounded-full flex items-center justify-center">
@@ -116,11 +121,12 @@ export default function AboutPage() {
                   </div>
                 </div>
                 <h3 className="text-xl font-medium text-[#1A1A1A] mb-4 uppercase tracking-wide">
-                  Client Empowerment
+                  Buyer Empowerment
                 </h3>
                 <p className="text-[#6B7280] font-light leading-relaxed">
-                  Our ultimate goal is to empower you. We provide the knowledge and tools to give you 
-                  lasting control over your environment, ensuring your home is a safe foundation for your health.
+                  Knowledge is power in property negotiations. We arm you with comprehensive data that 
+                  standard surveys miss, ensuring you make the biggest investment of your life with 
+                  complete confidence and full transparency.
                 </p>
               </div>
             </div>
@@ -131,7 +137,7 @@ export default function AboutPage() {
         <section className="py-24 bg-[#F7F8FA]">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 className="text-4xl md:text-5xl font-light text-[#1A1A1A] mb-12">
-              Begin Your Journey to a Healthier Home
+              Get Your Property's Sanctum Score Before You Buy
             </h2>
             <button className="px-12 py-4 text-sm font-medium text-white bg-[#002DFF] hover:bg-[#0026CC] transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl">
               SCHEDULE A DISCOVERY CALL

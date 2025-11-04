@@ -19,10 +19,12 @@ export default function AboutUsIntro() {
 
         {/* Paragraph */}
         <p className="text-xl text-[#6B7280] font-light leading-relaxed mb-8 max-w-3xl mx-auto">
-          Sanctum was born from personal experience. After purchasing a property that looked perfect 
-          but caused unexplained health issues, we discovered the hard way that standard property 
-          surveys miss critical environmental factors. We created the service we wish had existed—one 
-          that gives UK property buyers the full picture before they commit to a purchase.
+          Sanctum was born from a costly mistake. After purchasing a property that looked perfect 
+          on the surface, we discovered—too late—that hidden environmental issues were causing 
+          unexplained health problems. Standard property surveys completely missed these critical 
+          factors. We created the pre-purchase home health survey we desperately needed but couldn't 
+          find—one that gives UK property buyers the complete picture, backed by our proprietary 
+          Sanctum Score™, before they commit to the biggest investment of their life.
         </p>
 
         {/* Stats */}
@@ -36,8 +38,8 @@ export default function AboutUsIntro() {
             <p className="text-sm text-[#6B7280]">average cost of post-purchase remediation</p>
           </div>
           <div>
-            <div className="text-3xl font-bold text-[#002DFF] mb-2">72 Hours</div>
-            <p className="text-sm text-[#6B7280]">average time lost to health issues from poor homes</p>
+            <div className="text-3xl font-bold text-[#002DFF] mb-2">100%</div>
+            <p className="text-sm text-[#6B7280]">preventable with pre-purchase assessment</p>
           </div>
         </div>
 
