@@ -149,7 +149,7 @@ export default function SanctumScore() {
                 Understanding Your Property's Score
               </h3>
               <p className="text-[#6B7280] leading-relaxed mb-6">
-                The Sanctum Score™ is calculated using proprietary algorithms that analyze over 200 
+                The Sanctum Score™ is calculated using proprietary algorithms that analyse over 200 
                 environmental factors specific to UK properties. Each category is weighted based on 
                 peer-reviewed research and clinical data to provide an objective health assessment 
                 before you commit to a purchase.
@@ -292,7 +292,7 @@ export default function SanctumScore() {
             </li>
             <li className="flex items-start space-x-3">
               <span className="text-amber-600 font-bold mt-0.5">2.</span>
-              <span><span className="font-semibold text-[#1A1A1A]">Medium Priority:</span> Install EMF shielding or relocate Wi-Fi router away from bedrooms (Electromagnetic Hygiene: 64/100)</span>
+              <span><span className="font-semibold text-[#1A1A1A]">Medium Priority:</span> Install EMF shielding or address wiring issues in bedrooms (Electromagnetic Hygiene: 64/100)</span>
             </li>
             <li className="flex items-start space-x-3">
               <span className="text-green-600 font-bold mt-0.5">3.</span>

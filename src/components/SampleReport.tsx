@@ -227,7 +227,7 @@ export default function SampleReport() {
                       <h4 className="text-sm font-medium text-[#1A1A1A] mb-2">RF Radiation Sources</h4>
                       <div className="space-y-2">
                         <div className="flex justify-between text-sm">
-                          <span className="text-[#6B7280]">WiFi Router</span>
+                          <span className="text-[#6B7280]">Neighbouring Wireless</span>
                           <span className="text-yellow-600">-42 dBm</span>
                         </div>
                         <div className="flex justify-between text-sm">
@@ -235,7 +235,7 @@ export default function SampleReport() {
                           <span className="text-red-600">-38 dBm</span>
                         </div>
                         <div className="flex justify-between text-sm">
-                          <span className="text-[#6B7280]">Mobile Devices</span>
+                          <span className="text-[#6B7280]">External Sources</span>
                           <span className="text-green-600">-55 dBm</span>
                         </div>
                       </div>
@@ -320,7 +320,7 @@ export default function SampleReport() {
                   </div>
                   <div className="flex-1">
                     <h4 className="text-sm font-medium text-[#1A1A1A] mb-1">
-                      Low Priority: Lighting Optimization
+                      Low Priority: Lighting Optimisation
                     </h4>
                     <p className="text-sm text-[#6B7280] mb-2">
                       Install circadian-friendly lighting throughout property for better sleep quality.

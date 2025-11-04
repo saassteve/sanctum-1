@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowLeft, Zap, Wifi, Smartphone, Radio, Shield, Activity } from 'lucide-react';
+import { ArrowLeft, Zap, Smartphone, Radio, Shield, Activity, Waves } from 'lucide-react';
 
 export default function ElectromagneticHygieneDiagnostic() {
   return (
@@ -33,11 +33,11 @@ export default function ElectromagneticHygieneDiagnostic() {
               Electromagnetic Hygiene: Managing Invisible Exposure
             </h1>
             <p className="text-xl text-[#6B7280] font-light leading-relaxed max-w-3xl mx-auto">
-              Electromagnetic fields (EMFs) from wireless devices, electrical systems, and modern technology create 
-              an invisible layer of exposure in our homes. Chronic EMF exposure can disrupt sleep patterns, affect 
+              Electromagnetic fields (EMFs) from electrical systems and existing infrastructure create 
+              an invisible layer of exposure in properties. Chronic EMF exposure can disrupt sleep patterns, affect 
               cellular function, and contribute to fatigue and cognitive issues. Our comprehensive electromagnetic 
-              assessment maps your home's EMF landscape and provides targeted strategies to reduce exposure whilst 
-              maintaining modern convenience.
+              assessment maps the property's EMF landscape before you buy, revealing issues that could affect your 
+              health and helping you negotiate on price or budget for remediation.
             </p>
           </div>
         </section>
@@ -59,14 +59,14 @@ export default function ElectromagneticHygieneDiagnostic() {
               <div className="bg-white rounded-lg p-8 shadow-sm border border-gray-100 text-center">
                 <div className="flex justify-center mb-6">
                   <div className="w-16 h-16 bg-[#002DFF]/10 rounded-full flex items-center justify-center">
-                    <Wifi className="w-8 h-8 text-[#002DFF]" strokeWidth={1.5} />
+                    <Waves className="w-8 h-8 text-[#002DFF]" strokeWidth={1.5} />
                   </div>
                 </div>
                 <h3 className="text-lg font-medium text-[#1A1A1A] mb-3 uppercase tracking-wide">
                   Radiofrequency (RF) Radiation
                 </h3>
                 <p className="text-[#6B7280] font-light leading-relaxed">
-                  High-frequency emissions from WiFi routers, mobile phones, smart devices, and wireless communication systems.
+                  High-frequency emissions from nearby mobile phone masts, neighbouring properties' wireless systems, and external communication infrastructure.
                 </p>
               </div>
 
@@ -81,7 +81,7 @@ export default function ElectromagneticHygieneDiagnostic() {
                   Extremely Low Frequency (ELF)
                 </h3>
                 <p className="text-[#6B7280] font-light leading-relaxed">
-                  Low-frequency magnetic fields from electrical wiring, appliances, and power lines that can penetrate walls and bodies.
+                  Low-frequency magnetic fields from electrical wiring, existing appliances, and power lines that can penetrate walls and bodies.
                 </p>
               </div>
 
@@ -96,7 +96,7 @@ export default function ElectromagneticHygieneDiagnostic() {
                   Dirty Electricity
                 </h3>
                 <p className="text-[#6B7280] font-light leading-relaxed">
-                  High-frequency voltage transients on electrical wiring caused by modern electronics and energy-efficient devices.
+                  High-frequency voltage transients on electrical wiring caused by existing electronics and energy-efficient devices in the property.
                 </p>
               </div>
 
@@ -126,11 +126,11 @@ export default function ElectromagneticHygieneDiagnostic() {
                   Microwave Radiation
                 </h3>
                 <p className="text-[#6B7280] font-light leading-relaxed">
-                  High-frequency emissions from microwave ovens, wireless devices, and smart metres that can cause tissue heating.
+                  High-frequency emissions from smart metres, neighbouring wireless systems, and nearby communication infrastructure that can cause tissue heating.
                 </p>
               </div>
 
-              {/* Smart Device Emissions */}
+              {/* Wiring & Infrastructure */}
               <div className="bg-white rounded-lg p-8 shadow-sm border border-gray-100 text-center">
                 <div className="flex justify-center mb-6">
                   <div className="w-16 h-16 bg-[#002DFF]/10 rounded-full flex items-center justify-center">
@@ -138,10 +138,10 @@ export default function ElectromagneticHygieneDiagnostic() {
                   </div>
                 </div>
                 <h3 className="text-lg font-medium text-[#1A1A1A] mb-3 uppercase tracking-wide">
-                  Smart Device Emissions
+                  Wiring & Infrastructure
                 </h3>
                 <p className="text-[#6B7280] font-light leading-relaxed">
-                  Bluetooth, WiFi, and cellular signals from smart home devices, tablets, and IoT systems throughout your living space.
+                  Assessment of electrical wiring errors, grounding issues, and proximity to external EMF sources like substations and power lines.
                 </p>
               </div>
             </div>
@@ -169,7 +169,7 @@ export default function ElectromagneticHygieneDiagnostic() {
                     </h3>
                     <p className="text-[#6B7280] font-light leading-relaxed">
                       Using professional-grade EMF metres and spectrum analysers, we create detailed maps of electromagnetic 
-                      exposure throughout your home, identifying hotspots and measuring field strength in all living areas.
+                      exposure throughout the property, identifying hotspots and measuring field strength in all living areas.
                     </p>
                   </div>
                 </div>
@@ -183,8 +183,8 @@ export default function ElectromagneticHygieneDiagnostic() {
                       Source Identification & Analysis
                     </h3>
                     <p className="text-[#6B7280] font-light leading-relaxed">
-                      Systematic evaluation of all EMF sources including electrical panels, wiring systems, wireless devices, 
-                      and external sources like mobile phone towers and power lines affecting your property.
+                      Systematic evaluation of all EMF sources including electrical panels, wiring systems, existing appliances, 
+                      and external sources like mobile phone masts and power lines affecting the property.
                     </p>
                   </div>
                 </div>
@@ -213,8 +213,8 @@ export default function ElectromagneticHygieneDiagnostic() {
                       Mitigation Strategy Development
                     </h3>
                     <p className="text-[#6B7280] font-light leading-relaxed">
-                      Creation of a prioritised action plan including shielding solutions, device management protocols, 
-                      and electrical system modifications to reduce exposure whilst maintaining functionality and convenience.
+                      Creation of a prioritised action plan including shielding solutions, wiring corrections, 
+                      and electrical system modifications to reduce exposure—with clear cost estimates for negotiation leverage.
                     </p>
                   </div>
                 </div>
@@ -227,13 +227,13 @@ export default function ElectromagneticHygieneDiagnostic() {
         <section className="py-24 bg-[#F7F8FA]">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 className="text-4xl md:text-5xl font-light text-[#1A1A1A] mb-8">
-              Ready to Reduce Your EMF Exposure?
+              Ready to Assess Your Property's EMF Exposure?
             </h2>
             <p className="text-xl text-[#6B7280] font-light mb-12 max-w-2xl mx-auto">
-              Take control of your electromagnetic environment with our comprehensive EMF assessment and mitigation strategies.
+              Discover electromagnetic issues before you buy—get clear cost estimates for remediation and powerful negotiation leverage.
             </p>
             <button className="px-12 py-4 text-sm font-medium text-white bg-[#002DFF] hover:bg-[#0026CC] transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl">
-              SCHEDULE A COMPREHENSIVE HOME ASSESSMENT
+              SCHEDULE YOUR PRE-PURCHASE ASSESSMENT
             </button>
           </div>
         </section>

@@ -71,7 +71,7 @@ export default function DataToAction() {
               48-Hour Analysis
             </h3>
             <p className="text-[#6B7280] font-light leading-relaxed">
-              Our team analyzes all data and calculates your property's Sanctum Score. Results are compiled into a comprehensive, easy-to-understand report.
+              Our team analyses all data and calculates your property's Sanctum Score. Results are compiled into a comprehensive, easy-to-understand report.
             </p>
           </div>
 
