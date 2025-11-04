@@ -19,9 +19,10 @@ import SampleReport from './components/SampleReport';
 import AboutUsIntro from './components/AboutUsIntro';
 import AboutPage from './components/AboutPage';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
-import { TooltipProvider } from '@/components/ui/tooltip';
 import { Toaster } from 'sonner';
-import { HoverReceiver } from "@/visual-edits/VisualEditsMessenger";
+import HoverReceiver from './visual-edits/VisualEditsMessenger';
+
+const queryClient = new QueryClient();
 
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -95,28 +96,25 @@ function App() {
 
   return (
     <QueryClientProvider client={queryClient}>
-      <TooltipProvider>
-        <Toaster />
-        <Sonner />
-        <HoverReceiver />
-        <Router>
-          <div className="min-h-screen bg-white">
-            <Header isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
-            <Routes>
-              <Route path="/" element={<HomePage />} />
-              <Route path="/atmospheric-purity-diagnostic" element={<AtmosphericPurityWithSEO />} />
-              <Route path="/hydration-integrity-diagnostic" element={<HydrationIntegrityWithSEO />} />
-              <Route path="/electromagnetic-hygiene-diagnostic" element={<ElectromagneticHygieneWithSEO />} />
-              <Route path="/circadian-alignment-diagnostic" element={<CircadianAlignmentWithSEO />} />
-              <Route path="/material-toxicity-diagnostic" element={<MaterialToxicityWithSEO />} />
-              <Route path="/sample-report" element={<SampleReportWithSEO />} />
-              <Route path="/about" element={<AboutPageWithSEO />} />
-              <Route path="*" element={<HomePage />} />
-            </Routes>
-            <Footer />
-          </div>
-        </Router>
-      </TooltipProvider>
+      <Toaster />
+      <HoverReceiver />
+      <Router>
+        <div className="min-h-screen bg-white">
+          <Header isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/atmospheric-purity-diagnostic" element={<AtmosphericPurityWithSEO />} />
+            <Route path="/hydration-integrity-diagnostic" element={<HydrationIntegrityWithSEO />} />
+            <Route path="/electromagnetic-hygiene-diagnostic" element={<ElectromagneticHygieneWithSEO />} />
+            <Route path="/circadian-alignment-diagnostic" element={<CircadianAlignmentWithSEO />} />
+            <Route path="/material-toxicity-diagnostic" element={<MaterialToxicityWithSEO />} />
+            <Route path="/sample-report" element={<SampleReportWithSEO />} />
+            <Route path="/about" element={<AboutPageWithSEO />} />
+            <Route path="*" element={<HomePage />} />
+          </Routes>
+          <Footer />
+        </div>
+      </Router>
     </QueryClientProvider>
   );
 }
