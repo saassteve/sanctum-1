@@ -37,12 +37,7 @@ export default function Hero() {
         {/* Main Headline with improved typography */}
         <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white leading-[1.15] mb-6 sm:mb-8">
           Your New Home{' '}
-          <span
-            className="block mt-2 text-sanctum-cyan-300"
-            style={{
-              filter: 'drop-shadow(0 0 20px rgba(135, 207, 225, 0.6)) drop-shadow(0 0 10px rgba(135, 207, 225, 0.4))'
-            }}
-          >
+          <span className="block mt-2 text-sanctum-cyan-300">
             Could Make You Sick
           </span>
         </h1>
@@ -78,7 +73,7 @@ export default function Hero() {
 
         {/* CTA Buttons with improved styling */}
         <div className="flex flex-col sm:flex-row gap-4 sm:gap-6">
-          <button className="group relative px-8 sm:px-10 md:px-12 py-5 sm:py-6 text-sm sm:text-base font-semibold text-white bg-gradient-to-r from-sanctum-cyan-500 to-sanctum-cyan-600 hover:from-sanctum-cyan-600 hover:to-sanctum-cyan-700 transition-all duration-300 transform hover:scale-105 hover:shadow-2xl shadow-xl rounded-sm overflow-hidden">
+          <button className="group relative px-8 sm:px-10 md:px-12 py-5 sm:py-6 text-sm sm:text-base font-semibold text-white bg-gradient-to-r from-sanctum-cyan-500 to-sanctum-cyan-600 hover:from-sanctum-cyan-600 hover:to-sanctum-cyan-700 transition-all duration-300 transform hover:scale-105 hover:shadow-2xl shadow-xl rounded-md overflow-hidden">
             <span className="relative z-10 flex items-center justify-center space-x-2">
               <span>BOOK YOUR HOME SURVEY</span>
               <svg className="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -87,7 +82,7 @@ export default function Hero() {
             </span>
             <div className="absolute inset-0 bg-gradient-to-r from-white/0 via-white/20 to-white/0 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700"></div>
           </button>
-          <button className="px-8 sm:px-10 md:px-12 py-5 sm:py-6 text-sm sm:text-base font-semibold text-white border-2 border-white/90 hover:bg-white hover:text-sanctum-cyan-600 transition-all duration-300 rounded-sm backdrop-blur-sm hover:shadow-lg">
+          <button className="px-8 sm:px-10 md:px-12 py-5 sm:py-6 text-sm sm:text-base font-semibold text-white border-2 border-white/90 hover:bg-white hover:text-sanctum-cyan-600 transition-all duration-300 rounded-md backdrop-blur-sm hover:shadow-lg">
             VIEW SAMPLE REPORT
           </button>
         </div>

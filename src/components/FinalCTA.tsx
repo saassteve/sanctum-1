@@ -48,11 +48,11 @@ export default function FinalCTA() {
 
         {/* CTA Buttons */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-          <button className="group px-10 py-5 text-base font-bold text-sanctum-cyan-600 bg-white hover:bg-gray-50 transition-all duration-300 transform hover:scale-105 shadow-2xl rounded-lg inline-flex items-center">
+          <button className="group px-10 py-5 text-base font-bold text-sanctum-cyan-600 bg-white hover:bg-gray-50 transition-all duration-300 transform hover:scale-105 shadow-2xl rounded-md inline-flex items-center">
             <span>BOOK YOUR HOME SURVEY NOW</span>
             <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
           </button>
-          <button className="px-10 py-5 text-base font-semibold text-white border-2 border-white hover:bg-white hover:text-sanctum-cyan-600 transition-all duration-300 rounded-lg">
+          <button className="px-10 py-5 text-base font-semibold text-white border-2 border-white hover:bg-white hover:text-sanctum-cyan-600 transition-all duration-300 rounded-md">
             VIEW SAMPLE REPORT
           </button>
         </div>

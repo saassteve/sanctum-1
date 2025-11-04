@@ -62,7 +62,7 @@ export default function Header({ isMenuOpen, setIsMenuOpen }: HeaderProps) {
 
           {/* Desktop CTA Button */}
           <div className="hidden md:flex items-center">
-            <button className="px-6 py-2.5 text-sm font-semibold text-[#1A1A1A] bg-sanctum-cyan-400 hover:bg-sanctum-cyan-500 transition-all duration-300 shadow-md hover:shadow-lg rounded">
+            <button className="px-6 py-2.5 text-sm font-semibold text-white bg-sanctum-cyan-400 hover:bg-sanctum-cyan-500 transition-all duration-300 shadow-md hover:shadow-lg rounded-md">
               SCHEDULE ASSESSMENT
             </button>
           </div>
@@ -98,7 +98,7 @@ export default function Header({ isMenuOpen, setIsMenuOpen }: HeaderProps) {
               ABOUT
             </button>
             <div className="pt-4">
-              <button className="w-full px-4 py-2.5 text-sm font-semibold text-[#1A1A1A] bg-sanctum-cyan-400 hover:bg-sanctum-cyan-500 rounded">
+              <button className="w-full px-4 py-2.5 text-sm font-semibold text-white bg-sanctum-cyan-400 hover:bg-sanctum-cyan-500 rounded-md">
                 SCHEDULE ASSESSMENT
               </button>
             </div>
