@@ -22,8 +22,9 @@ export default function BioEnvironmentalProfile() {
                 Complete Home Health Survey
               </span>
             </div>
-            <h2 className="text-4xl md:text-5xl font-bold text-[#1A1A1A] mb-6">
-              Full Bio-Environmental Assessment
+            <h2 className="text-4xl md:text-5xl font-bold mb-6">
+              <span className="text-sanctum-cyan-600">Bio-Environmental</span>{' '}
+              <span className="text-[#1A1A1A]">Profile</span>
             </h2>
             <p className="text-xl text-[#6B7280] font-light leading-relaxed mb-8">
               Before you purchase a property in the UK, get a comprehensive diagnostic assessment

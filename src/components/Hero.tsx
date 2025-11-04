@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function Hero() {
   return (
-    <section 
+    <section
       className="min-h-screen flex items-center relative overflow-hidden pt-24 pb-16 sm:pt-28 sm:pb-20 md:pt-32 md:pb-24"
       style={{
         backgroundImage: 'url("/sanctumbedroom.png")',
@@ -12,7 +12,7 @@ export default function Hero() {
       }}
     >
       {/* Enhanced Gradient Overlay with subtle vignette */}
-      <div 
+      <div
         className="absolute inset-0"
         style={{
           background: 'radial-gradient(ellipse at left center, rgba(0, 10, 30, 0.88) 0%, rgba(0, 10, 30, 0.92) 40%, rgba(0, 10, 30, 0.7) 70%, rgba(0, 10, 30, 0.3) 100%)'
@@ -38,7 +38,10 @@ export default function Hero() {
         <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white leading-[1.15] mb-6 sm:mb-8">
           Don't Buy Blind.{' '}
           <span
-            className="block mt-2 bg-gradient-to-r from-sanctum-cyan-300 via-sanctum-cyan-400 to-sanctum-cyan-200 bg-clip-text text-transparent"
+            className="block mt-2 text-sanctum-cyan-300"
+            style={{
+              filter: 'drop-shadow(0 0 20px rgba(135, 207, 225, 0.6)) drop-shadow(0 0 10px rgba(135, 207, 225, 0.4))'
+            }}
           >
             Know Your Home's True Health
           </span>

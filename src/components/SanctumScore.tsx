@@ -64,8 +64,8 @@ export default function SanctumScore() {
             <Award className="w-8 h-8 text-sanctum-cyan-500" />
             <span className="text-sm font-semibold text-sanctum-cyan-600 uppercase tracking-wider">Proprietary Algorithm</span>
           </div>
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#1A1A1A] mb-6">
-            The Sanctum Score<sup className="text-2xl">™</sup>
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
+            <span className="text-sanctum-cyan-600">The Sanctum Score</span><sup className="text-2xl text-sanctum-cyan-600">™</sup>
           </h2>
           <p className="text-xl md:text-2xl text-[#6B7280] font-light max-w-4xl mx-auto leading-relaxed">
             A comprehensive health rating for any UK property, distilled into a single,

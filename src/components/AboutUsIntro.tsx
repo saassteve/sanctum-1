@@ -13,8 +13,9 @@ export default function AboutUsIntro() {
         </div>
 
         {/* Section Title */}
-        <h2 className="text-4xl md:text-5xl font-bold text-[#1A1A1A] mb-8">
-          Why We Built This Service
+        <h2 className="text-4xl md:text-5xl font-bold mb-8">
+          <span className="text-sanctum-cyan-600">Why We Built</span>{' '}
+          <span className="text-[#1A1A1A]">This Service</span>
         </h2>
 
         {/* Paragraph */}

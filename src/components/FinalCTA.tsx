@@ -19,8 +19,9 @@ export default function FinalCTA() {
         </div>
 
         {/* Headline */}
-        <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-8 leading-tight">
-          Don't Buy Blind. Get Your Property's Sanctum Score.
+        <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-8 leading-tight">
+          <span className="text-white">Don't Buy Blind.</span>{' '}
+          <span className="text-sanctum-cyan-200">Get Your Property's Sanctum Score.</span>
         </h2>
         
         {/* Subheading */}

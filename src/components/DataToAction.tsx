@@ -9,8 +9,9 @@ export default function DataToAction() {
           <div className="inline-flex items-center space-x-2 mb-4">
             <span className="text-sm font-semibold text-sanctum-cyan-600 uppercase tracking-wider">Our Process</span>
           </div>
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#1A1A1A] mb-6">
-            How It Works
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
+            <span className="text-sanctum-cyan-600">How It</span>{' '}
+            <span className="text-[#1A1A1A]">Works</span>
           </h2>
           <p className="text-xl md:text-2xl text-[#6B7280] font-light max-w-4xl mx-auto">
             From property viewing to Sanctum Score delivery, we make it simple
