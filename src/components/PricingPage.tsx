@@ -51,7 +51,10 @@ export default function PricingPage() {
                 Core environmental diagnostics for light quality, water purity and air quality assessment.
               </p>
 
-              <button className="w-full px-6 py-4 bg-[#1c1c1c] text-white font-mono-tech text-sm rounded hover:bg-gray-800 transition-all mb-8">
+              <button
+                onClick={() => navigate('/checkout?package=light_water_air')}
+                className="w-full px-6 py-4 bg-[#1c1c1c] text-white font-mono-tech text-sm rounded hover:bg-gray-800 transition-all mb-8"
+              >
                 SELECT PACKAGE
               </button>
 
@@ -100,7 +103,10 @@ export default function PricingPage() {
                 Complete diagnostic suite including EMF mapping and material toxicity screening for comprehensive property analysis.
               </p>
 
-              <button className="w-full px-6 py-4 bg-emerald-600 text-white font-mono-tech text-sm rounded hover:bg-emerald-700 transition-all mb-8">
+              <button
+                onClick={() => navigate('/checkout?package=full_screen')}
+                className="w-full px-6 py-4 bg-emerald-600 text-white font-mono-tech text-sm rounded hover:bg-emerald-700 transition-all mb-8"
+              >
                 SELECT PACKAGE
               </button>
 
@@ -153,7 +159,10 @@ export default function PricingPage() {
                 White-glove service with comprehensive laboratory testing for high-value properties requiring exhaustive analysis.
               </p>
 
-              <button className="w-full px-6 py-4 bg-[#1c1c1c] text-white font-mono-tech text-sm rounded hover:bg-gray-800 transition-all mb-8">
+              <button
+                onClick={() => navigate('/checkout?package=full_screen_lab')}
+                className="w-full px-6 py-4 bg-[#1c1c1c] text-white font-mono-tech text-sm rounded hover:bg-gray-800 transition-all mb-8"
+              >
                 SELECT PACKAGE
               </button>
 

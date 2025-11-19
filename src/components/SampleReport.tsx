@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { ArrowLeft, FileText, Wind, Droplets, Zap, Sun, Shield, Download, ChevronRight } from 'lucide-react';
+import { ArrowLeft, FileText, Wind, Droplets, Zap, Sun, Shield, Download, ChevronRight, Mail, User, CheckCircle } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
+import { supabase } from '../lib/supabase';
 
 export default function SampleReport() {
   const [isVisible, setIsVisible] = useState(false);
@@ -8,6 +9,12 @@ export default function SampleReport() {
   const sectionRef = useRef<HTMLElement>(null);
   const targetScore = 78;
   const navigate = useNavigate();
+
+  const [showForm, setShowForm] = useState(false);
+  const [email, setEmail] = useState('');
+  const [fullName, setFullName] = useState('');
+  const [submitting, setSubmitting] = useState(false);
+  const [submitted, setSubmitted] = useState(false);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -50,6 +57,30 @@ export default function SampleReport() {
     }
   }, [isVisible, targetScore]);
 
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setSubmitting(true);
+
+    const { error } = await supabase
+      .from('sample_report_requests')
+      .insert({
+        email,
+        full_name: fullName || null
+      });
+
+    if (!error) {
+      setSubmitted(true);
+      setTimeout(() => {
+        const link = document.createElement('a');
+        link.href = '/sample-report.pdf';
+        link.download = 'Sanctum-Sample-Report.pdf';
+        link.click();
+      }, 500);
+    }
+
+    setSubmitting(false);
+  };
+
   return (
     <div className="min-h-screen bg-[#F9F8F4]">
       {/* Hero Section */}
@@ -77,14 +108,78 @@ export default function SampleReport() {
               Before you commit to a property purchase, get the complete environmental picture.
               Our diagnostic report translates complex data into actionable insights.
             </p>
-            <a
-              href="/sample-report.pdf"
-              download="Sanctum-Sample-Report.pdf"
-              className="px-8 py-4 bg-[#1c1c1c] text-white font-mono-tech text-sm rounded hover:bg-gray-800 transition-all hover:translate-y-[-2px] shadow-xl shadow-gray-200/50 flex items-center gap-2 w-fit"
-            >
-              <Download size={16} />
-              DOWNLOAD SAMPLE PDF
-            </a>
+
+            {!showForm && !submitted && (
+              <button
+                onClick={() => setShowForm(true)}
+                className="px-8 py-4 bg-[#1c1c1c] text-white font-mono-tech text-sm rounded hover:bg-gray-800 transition-all hover:translate-y-[-2px] shadow-xl shadow-gray-200/50 flex items-center gap-2"
+              >
+                <Download size={16} />
+                REQUEST SAMPLE REPORT
+              </button>
+            )}
+
+            {showForm && !submitted && (
+              <div className="bg-white border border-gray-200 rounded-sm p-6 max-w-md">
+                <h3 className="font-medium text-lg text-[#1c1c1c] mb-4">Get your sample report</h3>
+                <form onSubmit={handleSubmit} className="space-y-4">
+                  <div>
+                    <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
+                      Email address <span className="text-red-500">*</span>
+                    </label>
+                    <div className="relative">
+                      <Mail size={18} className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400" />
+                      <input
+                        id="email"
+                        type="email"
+                        required
+                        value={email}
+                        onChange={(e) => setEmail(e.target.value)}
+                        className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-sm focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-transparent"
+                        placeholder="you@example.com"
+                      />
+                    </div>
+                  </div>
+
+                  <div>
+                    <label htmlFor="fullName" className="block text-sm font-medium text-gray-700 mb-2">
+                      Full name (optional)
+                    </label>
+                    <div className="relative">
+                      <User size={18} className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400" />
+                      <input
+                        id="fullName"
+                        type="text"
+                        value={fullName}
+                        onChange={(e) => setFullName(e.target.value)}
+                        className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-sm focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-transparent"
+                        placeholder="John Smith"
+                      />
+                    </div>
+                  </div>
+
+                  <button
+                    type="submit"
+                    disabled={submitting}
+                    className="w-full px-6 py-3 bg-[#1c1c1c] text-white font-mono-tech text-sm rounded hover:bg-gray-800 transition-all disabled:opacity-50 disabled:cursor-not-allowed"
+                  >
+                    {submitting ? 'SENDING...' : 'DOWNLOAD SAMPLE REPORT'}
+                  </button>
+                </form>
+              </div>
+            )}
+
+            {submitted && (
+              <div className="bg-green-50 border border-green-200 rounded-sm p-6 max-w-md flex items-start gap-3">
+                <CheckCircle size={24} className="text-green-600 flex-shrink-0 mt-0.5" />
+                <div>
+                  <h3 className="font-medium text-green-900 mb-1">Download started!</h3>
+                  <p className="text-sm text-green-800">
+                    Your sample report is downloading now. We'll also send a copy to your email.
+                  </p>
+                </div>
+              </div>
+            )}
           </div>
         </div>
       </section>
