@@ -26,6 +26,8 @@ import CheckoutPage from './components/CheckoutPage';
 import PaymentPage from './components/PaymentPage';
 import PropertyFormPage from './components/PropertyFormPage';
 import DashboardPage from './components/DashboardPage';
+import AdminDashboard from './components/AdminDashboard';
+import ReportUpload from './components/ReportUpload';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { Toaster } from 'sonner';
 import HoverReceiver from './visual-edits/VisualEditsMessenger';
@@ -197,6 +199,8 @@ function App() {
               <Route path="/payment" element={<PaymentPage />} />
               <Route path="/property-form" element={<PropertyFormPage />} />
               <Route path="/dashboard" element={<DashboardPage />} />
+              <Route path="/admin" element={<AdminDashboard />} />
+              <Route path="/admin/upload-report" element={<ReportUpload />} />
               <Route path="*" element={
                 <>
                   <Header isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />

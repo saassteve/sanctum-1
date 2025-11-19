@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import { Menu, X, ArrowRight } from 'lucide-react';
+import { Menu, X, ArrowRight, Shield } from 'lucide-react';
 import { useNavigate, useLocation } from 'react-router-dom';
+import { useAuth } from '../contexts/AuthContext';
 
 interface HeaderProps {
   isMenuOpen: boolean;
@@ -10,6 +11,7 @@ interface HeaderProps {
 export default function Header({ isMenuOpen, setIsMenuOpen }: HeaderProps) {
   const navigate = useNavigate();
   const location = useLocation();
+  const { profile } = useAuth();
   const [scrolled, setScrolled] = useState(false);
   const [scanMode, setScanMode] = useState(false);
 
@@ -68,6 +70,15 @@ export default function Header({ isMenuOpen, setIsMenuOpen }: HeaderProps) {
         </div>
 
         <div className="hidden md:flex items-center gap-4">
+          {profile?.role === 'admin' && (
+            <button
+              onClick={() => navigate('/admin')}
+              className="flex items-center gap-1 text-xs font-mono-tech hover:text-emerald-700 uppercase tracking-widest"
+            >
+              <Shield size={14} />
+              Admin
+            </button>
+          )}
           <button onClick={() => navigate('/login')} className="text-xs font-mono-tech hover:text-emerald-700 uppercase tracking-widest">Log In</button>
           <button
             onClick={() => navigate('/pricing')}
