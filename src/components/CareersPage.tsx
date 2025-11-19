@@ -61,52 +61,6 @@ export default function CareersPage() {
         </section>
 
         <section className="mb-12">
-          <h2 className="font-serif-display text-3xl mb-6 text-[#1c1c1c]">Open Positions</h2>
-
-          <div className="bg-white border border-gray-200 p-8 rounded-sm mb-6">
-            <h3 className="font-semibold text-2xl mb-3 text-[#1c1c1c]">Environmental Assessment Technician</h3>
-            <p className="text-gray-600 mb-4 font-mono-tech text-sm uppercase tracking-widest">Full-Time • On-Site</p>
-            <p className="text-gray-700 mb-4">
-              We're seeking experienced technicians to conduct comprehensive environmental assessments in residential and commercial properties. You'll be responsible for air quality testing, water analysis, EMF measurements, and light quality assessments.
-            </p>
-            <ul className="list-disc pl-6 mb-4 text-gray-700 space-y-2">
-              <li>3+ years experience in environmental testing or building diagnostics</li>
-              <li>Strong understanding of air quality, water testing, and EMF measurement</li>
-              <li>Excellent attention to detail and documentation skills</li>
-              <li>Valid driver's license and ability to travel to client sites</li>
-            </ul>
-          </div>
-
-          <div className="bg-white border border-gray-200 p-8 rounded-sm mb-6">
-            <h3 className="font-semibold text-2xl mb-3 text-[#1c1c1c]">Laboratory Analyst</h3>
-            <p className="text-gray-600 mb-4 font-mono-tech text-sm uppercase tracking-widest">Full-Time • Laboratory-Based</p>
-            <p className="text-gray-700 mb-4">
-              Join our laboratory team to analyze environmental samples and provide detailed reports. You'll work with water, air, and material samples to identify contaminants and health hazards.
-            </p>
-            <ul className="list-disc pl-6 mb-4 text-gray-700 space-y-2">
-              <li>Bachelor's degree in Environmental Science, Chemistry, or related field</li>
-              <li>Experience with laboratory testing and analysis procedures</li>
-              <li>Knowledge of environmental health standards and regulations</li>
-              <li>Strong analytical and problem-solving skills</li>
-            </ul>
-          </div>
-
-          <div className="bg-white border border-gray-200 p-8 rounded-sm mb-6">
-            <h3 className="font-semibold text-2xl mb-3 text-[#1c1c1c]">Client Relations Manager</h3>
-            <p className="text-gray-600 mb-4 font-mono-tech text-sm uppercase tracking-widest">Full-Time • Hybrid</p>
-            <p className="text-gray-700 mb-4">
-              Manage client relationships from initial consultation through report delivery. You'll help clients understand their assessment results and guide them through implementing recommendations.
-            </p>
-            <ul className="list-disc pl-6 mb-4 text-gray-700 space-y-2">
-              <li>5+ years experience in customer success or account management</li>
-              <li>Excellent communication and interpersonal skills</li>
-              <li>Background in environmental health or related field preferred</li>
-              <li>Ability to explain technical concepts to non-technical audiences</li>
-            </ul>
-          </div>
-        </section>
-
-        <section className="mb-12">
           <h2 className="font-serif-display text-3xl mb-6 text-[#1c1c1c]">Benefits</h2>
           <ul className="list-disc pl-6 text-gray-700 space-y-2">
             <li>Competitive salary and performance bonuses</li>
