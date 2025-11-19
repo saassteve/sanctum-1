@@ -20,6 +20,12 @@ export default function Header({ isMenuOpen, setIsMenuOpen }: HeaderProps) {
   }, []);
 
   const handleNavigation = (sectionId: string) => {
+    if (sectionId === 'sample') {
+      navigate('/sample-report');
+      setIsMenuOpen(false);
+      return;
+    }
+
     if (location.pathname !== '/') {
       navigate('/');
       setTimeout(() => {

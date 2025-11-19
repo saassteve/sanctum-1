@@ -46,6 +46,7 @@ function App() {
   const AboutPageWithSEO = () => {
     useEffect(() => {
       updateSEO(seoData.about);
+      window.scrollTo(0, 0);
     }, []);
     return <AboutPage />;
   };
@@ -53,6 +54,7 @@ function App() {
   const AtmosphericPurityWithSEO = () => {
     useEffect(() => {
       updateSEO(seoData.atmosphericPurity);
+      window.scrollTo(0, 0);
     }, []);
     return <AtmosphericPurityDiagnostic />;
   };
@@ -60,6 +62,7 @@ function App() {
   const HydrationIntegrityWithSEO = () => {
     useEffect(() => {
       updateSEO(seoData.hydrationIntegrity);
+      window.scrollTo(0, 0);
     }, []);
     return <HydrationIntegrityDiagnostic />;
   };
@@ -67,6 +70,7 @@ function App() {
   const ElectromagneticHygieneWithSEO = () => {
     useEffect(() => {
       updateSEO(seoData.electromagneticHygiene);
+      window.scrollTo(0, 0);
     }, []);
     return <ElectromagneticHygieneDiagnostic />;
   };
@@ -74,6 +78,7 @@ function App() {
   const CircadianAlignmentWithSEO = () => {
     useEffect(() => {
       updateSEO(seoData.circadianAlignment);
+      window.scrollTo(0, 0);
     }, []);
     return <CircadianAlignmentDiagnostic />;
   };
@@ -81,6 +86,7 @@ function App() {
   const MaterialToxicityWithSEO = () => {
     useEffect(() => {
       updateSEO(seoData.materialToxicity);
+      window.scrollTo(0, 0);
     }, []);
     return <MaterialToxicityDiagnostic />;
   };
@@ -88,6 +94,7 @@ function App() {
   const SampleReportWithSEO = () => {
     useEffect(() => {
       updateSEO(seoData.sampleReport);
+      window.scrollTo(0, 0);
     }, []);
     return <SampleReport />;
   };
@@ -99,6 +106,7 @@ function App() {
         description: 'Transparent pricing for comprehensive property health assessments. From £595 for essential diagnostics to premium packages with full environmental analysis.',
         keywords: 'property assessment pricing, home inspection cost, environmental testing price'
       });
+      window.scrollTo(0, 0);
     }, []);
     return <PricingPage />;
   };
