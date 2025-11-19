@@ -1,4 +1,4 @@
-%PDF-1.4
+%PDF-1.7
 1 0 obj
 <<
 /Type /Catalog
@@ -8,77 +8,230 @@ endobj
 2 0 obj
 <<
 /Type /Pages
-/Kids [3 0 R]
-/Count 1
+/Kids [3 0 R 6 0 R]
+/Count 2
 >>
 endobj
 3 0 obj
 <<
 /Type /Page
 /Parent 2 0 R
+/MediaBox [0 0 612 792]
+/Contents 4 0 R
 /Resources <<
 /Font <<
-/F1 4 0 R
+/F1 5 0 R
+/F2 7 0 R
 >>
 >>
-/MediaBox [0 0 612 792]
-/Contents 5 0 R
 >>
 endobj
 4 0 obj
+<<
+/Length 1800
+>>
+stream
+BT
+/F1 24 Tf
+0.2 0.4 0.2 rg
+100 720 Td
+(SANCTUM) Tj
+0 0 0 rg
+/F2 12 Tf
+100 690 Td
+(Environmental Diagnostics) Tj
+0.7 0.7 0.7 RG
+1 w
+80 680 m
+532 680 l
+S
+0 0 0 rg
+/F1 16 Tf
+80 650 Td
+(Property Assessment Report) Tj
+/F2 11 Tf
+80 620 Td
+(Sample Report - For Demonstration Purposes) Tj
+0 -25 Td
+(Property: 45 Chelsea Gardens, London SW3 4HY) Tj
+0 -18 Td
+(Assessment Date: 15 November 2024) Tj
+0 -18 Td
+(Report ID: SANCTUM-2024-SAMPLE-001) Tj
+/F1 14 Tf
+0.2 0.6 0.3 rg
+80 500 Td
+(SANCTUM SCORE: 78/100) Tj
+0 0 0 rg
+/F2 10 Tf
+80 475 Td
+(Overall Environmental Health Rating: GOOD) Tj
+/F1 12 Tf
+80 440 Td
+(EXECUTIVE SUMMARY) Tj
+/F2 10 Tf
+80 418 Td
+(This property demonstrates good overall environmental health with some) Tj
+0 -14 Td
+(areas requiring attention. The comprehensive assessment evaluated over) Tj
+0 -14 Td
+(200 environmental factors across five key diagnostic areas.) Tj
+/F1 12 Tf
+80 360 Td
+(KEY FINDINGS) Tj
+/F2 10 Tf
+80 338 Td
+(Atmospheric Purity: 92/100 - Excellent) Tj
+0 -14 Td
+(  Air quality within optimal ranges for all measured parameters) Tj
+0 -20 Td
+(Hydration Integrity: 88/100 - Very Good) Tj
+0 -14 Td
+(  Water quality meets standards, minor chlorine presence detected) Tj
+0 -20 Td
+(Electromagnetic Hygiene: 64/100 - Fair) Tj
+0 -14 Td
+(  Elevated EMF readings in bedroom near electrical panel) Tj
+0 -20 Td
+(Circadian Alignment: 81/100 - Good) Tj
+0 -14 Td
+(  Natural light exposure adequate, some artificial light optimization needed) Tj
+0 -20 Td
+(Material Toxicity: 75/100 - Good) Tj
+0 -14 Td
+(  Low VOC levels detected, legacy paint materials in spare bedroom) Tj
+/F2 8 Tf
+80 80 Td
+(This is page 1 of a sample report. Full reports contain detailed analysis,) Tj
+0 -10 Td
+(remediation recommendations, and cost estimates. Visit sanctum-diagnostics.com) Tj
+ET
+endstream
+endobj
+5 0 obj
+<<
+/Type /Font
+/Subtype /Type1
+/BaseFont /Helvetica-Bold
+>>
+endobj
+6 0 obj
+<<
+/Type /Page
+/Parent 2 0 R
+/MediaBox [0 0 612 792]
+/Contents 8 0 R
+/Resources <<
+/Font <<
+/F1 5 0 R
+/F2 7 0 R
+>>
+>>
+>>
+endobj
+7 0 obj
 <<
 /Type /Font
 /Subtype /Type1
 /BaseFont /Helvetica
 >>
 endobj
-5 0 obj
+8 0 obj
 <<
-/Length 444
+/Length 1500
 >>
 stream
 BT
-/F1 18 Tf
-50 750 Td
-(SANCTUM ENVIRONMENTAL DIAGNOSTICS) Tj
-0 -30 Td
-/F1 14 Tf
-(Sample Property Assessment Report) Tj
-0 -60 Td
 /F1 12 Tf
-(Property Address: 123 Sample Street, London, UK) Tj
-0 -20 Td
-(Assessment Date: November 2024) Tj
-0 -20 Td
-(Report ID: SANCTUM-2024-001) Tj
-0 -40 Td
-/F1 14 Tf
-(SANCTUM SCORE: 78/100) Tj
-0 -40 Td
+80 720 Td
+(DETAILED DIAGNOSTIC RESULTS) Tj
 /F1 11 Tf
-(This is a sample report demonstrating the format and structure) Tj
-0 -15 Td
-(of a full Sanctum environmental diagnostic assessment.) Tj
-0 -30 Td
-(For a complete property assessment, please visit:) Tj
-0 -15 Td
-(www.sanctum-diagnostics.com) Tj
+80 690 Td
+(1. ATMOSPHERIC PURITY DIAGNOSTIC) Tj
+/F2 10 Tf
+80 668 Td
+(PM2.5 Particulate Matter: 8 ug/m3 \(Target: <12\)) Tj
+0 -14 Td
+(Volatile Organic Compounds: 180 ug/m3 \(Target: <500\)) Tj
+0 -14 Td
+(Carbon Dioxide: 650 ppm \(Target: <1000\)) Tj
+0 -14 Td
+(Relative Humidity: 48% \(Target: 40-60%\)) Tj
+/F2 9 Tf
+0 -16 Td
+(Analysis: Air quality is excellent across all measured parameters.) Tj
+0 -11 Td
+(Ventilation system functioning optimally.) Tj
+/F1 11 Tf
+80 560 Td
+(2. HYDRATION INTEGRITY DIAGNOSTIC) Tj
+/F2 10 Tf
+80 538 Td
+(Lead: <0.001 mg/L \(Target: <0.010\)) Tj
+0 -14 Td
+(Chlorine: 0.8 mg/L \(Target: <1.0\)) Tj
+0 -14 Td
+(Total Dissolved Solids: 120 ppm \(Target: <500\)) Tj
+0 -14 Td
+(pH Level: 7.2 \(Target: 6.5-8.5\)) Tj
+/F2 9 Tf
+0 -16 Td
+(Analysis: Water quality is very good. Consider point-of-use) Tj
+0 -11 Td
+(filtration to reduce residual chlorine for optimal taste.) Tj
+/F1 11 Tf
+80 450 Td
+(3. ELECTROMAGNETIC HYGIENE DIAGNOSTIC) Tj
+/F2 10 Tf
+80 428 Td
+(Bedroom EMF: 4.2 mG \(Target: <2.5\)) Tj
+0 -14 Td
+(Living Areas EMF: 1.8 mG \(Target: <2.5\)) Tj
+0 -14 Td
+(Radiofrequency: 0.3 uW/m2 \(Target: <10\)) Tj
+/F2 9 Tf
+0 -16 Td
+(Analysis: Elevated readings near main electrical panel.) Tj
+0 -11 Td
+(Recommendation: Relocate bed 2 metres from wall.) Tj
+0 -11 Td
+(Estimated Cost: GBP 0 \(simple furniture rearrangement\)) Tj
+/F1 11 Tf
+80 320 Td
+(RECOMMENDATIONS & NEXT STEPS) Tj
+/F2 10 Tf
+80 298 Td
+(Priority 1: Address bedroom EMF exposure \(Cost: GBP 0\)) Tj
+0 -14 Td
+(Priority 2: Install water filtration system \(Cost: GBP 300-500\)) Tj
+0 -14 Td
+(Priority 3: Paint replacement in spare bedroom \(Cost: GBP 400-600\)) Tj
+0 -20 Td
+(Total Estimated Remediation: GBP 700-1,100) Tj
+/F2 8 Tf
+80 80 Td
+(This is a sample report excerpt. For your property assessment,) Tj
+0 -10 Td
+(contact Sanctum Environmental Diagnostics at sanctum-diagnostics.com) Tj
 ET
 endstream
 endobj
 xref
-0 6
+0 9
 0000000000 65535 f
-0000000009 00000 n
-0000000058 00000 n
-0000000115 00000 n
-0000000262 00000 n
-0000000341 00000 n
+0000000015 00000 n
+0000000068 00000 n
+0000000135 00000 n
+0000000284 00000 n
+0000002136 00000 n
+0000002219 00000 n
+0000002368 00000 n
+0000002445 00000 n
 trailer
 <<
-/Size 6
+/Size 9
 /Root 1 0 R
 >>
 startxref
-835
+3997
 %%EOF
