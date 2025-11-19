@@ -214,7 +214,7 @@ export default function ElectromagneticHygieneDiagnostic() {
                     </h3>
                     <p className="text-[#6B7280] font-light leading-relaxed">
                       Creation of a prioritised action plan including shielding solutions, wiring corrections, 
-                      and electrical system modifications to reduce exposure—with clear cost estimates for negotiation leverage.
+                      and electrical system modifications to reduce exposure with clear cost estimates for negotiation leverage.
                     </p>
                   </div>
                 </div>
@@ -230,7 +230,7 @@ export default function ElectromagneticHygieneDiagnostic() {
               Ready to Assess Your Property's EMF Exposure?
             </h2>
             <p className="text-xl text-[#6B7280] font-light mb-12 max-w-2xl mx-auto">
-              Discover electromagnetic issues before you buy—get clear cost estimates for remediation and powerful negotiation leverage.
+              Discover electromagnetic issues before you buy. Get clear cost estimates for remediation and powerful negotiation leverage.
             </p>
             <button className="px-12 py-4 text-sm font-medium text-white bg-[#002DFF] hover:bg-[#0026CC] transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl">
               SCHEDULE YOUR PRE-PURCHASE ASSESSMENT

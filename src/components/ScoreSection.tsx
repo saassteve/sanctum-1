@@ -12,7 +12,7 @@ export default function ScoreSection() {
             A credit score for your <br/><span className="text-emerald-400">biological safety.</span>
           </h2>
           <p className="text-gray-400 text-lg font-light leading-relaxed mb-8">
-            We distill over 200 environmental factors into a single, actionable metric. Don't just guess if a home is healthy—know the number.
+            We distil over 200 environmental factors into a single, actionable metric. Don't just guess if a home is healthy. Know the number.
           </p>
 
           <div className="grid grid-cols-2 gap-4">

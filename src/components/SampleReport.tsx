@@ -97,7 +97,7 @@ export default function SampleReport() {
             </h2>
             <p className="text-gray-600 text-lg font-light leading-relaxed mb-8">
               Over 200 environmental data points distilled into one actionable number.
-              The Sanctum Score tells you exactly what you're walking into—before you sign.
+              The Sanctum Score tells you exactly what you're walking into before you sign.
             </p>
 
             <div className="space-y-3">

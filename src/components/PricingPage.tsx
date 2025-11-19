@@ -7,10 +7,8 @@ export default function PricingPage() {
 
   return (
     <div className="min-h-screen bg-[#F9F8F4]">
-      {/* Hero Section */}
       <section className="pt-32 pb-20 px-6 relative overflow-hidden">
         <div className="max-w-7xl mx-auto">
-          {/* Back Button */}
           <button
             onClick={() => navigate('/')}
             className="mb-12 flex items-center gap-2 text-gray-500 hover:text-emerald-600 transition-colors font-mono-tech text-xs tracking-widest uppercase"
@@ -31,32 +29,30 @@ export default function PricingPage() {
             </h1>
             <p className="text-lg text-gray-600 font-light leading-relaxed max-w-2xl mx-auto">
               One comprehensive assessment. No hidden fees. Complete environmental intelligence
-              delivered in 48 hours.
+              delivered within 48 hours.
             </p>
           </div>
         </div>
       </section>
 
-      {/* Pricing Cards */}
       <section className="py-24 px-6">
         <div className="max-w-7xl mx-auto">
           <div className="grid lg:grid-cols-3 gap-8">
-            {/* Essential Package */}
             <div className="border border-gray-200 bg-white p-8 rounded-sm hover:shadow-xl transition-all duration-300">
               <div className="mb-6">
-                <span className="font-mono-tech text-xs text-gray-500 tracking-widest uppercase">Essential</span>
+                <span className="font-mono-tech text-xs text-gray-500 tracking-widest uppercase">Light, Water and Air</span>
                 <div className="mt-4 flex items-baseline gap-2">
-                  <span className="font-mono-tech text-5xl font-bold text-[#1c1c1c]">£595</span>
+                  <span className="font-mono-tech text-5xl font-bold text-[#1c1c1c]">£750</span>
                   <span className="font-mono-tech text-sm text-gray-500">per property</span>
                 </div>
               </div>
 
               <p className="text-gray-600 font-light mb-6 leading-relaxed">
-                Core environmental diagnostics for standard residential properties up to 3 bedrooms.
+                Core environmental diagnostics for light quality, water purity and air quality assessment.
               </p>
 
               <button className="w-full px-6 py-4 bg-[#1c1c1c] text-white font-mono-tech text-sm rounded hover:bg-gray-800 transition-all mb-8">
-                SELECT ESSENTIAL
+                SELECT PACKAGE
               </button>
 
               <div className="space-y-3">
@@ -70,7 +66,7 @@ export default function PricingPage() {
                 </div>
                 <div className="flex items-start gap-3">
                   <Check size={18} className="text-emerald-600 mt-0.5 flex-shrink-0" />
-                  <span className="text-sm text-gray-700">EMF radiation mapping</span>
+                  <span className="text-sm text-gray-700">Circadian light analysis</span>
                 </div>
                 <div className="flex items-start gap-3">
                   <Check size={18} className="text-emerald-600 mt-0.5 flex-shrink-0" />
@@ -87,32 +83,39 @@ export default function PricingPage() {
               </div>
             </div>
 
-            {/* Comprehensive Package (Featured) */}
             <div className="border-2 border-emerald-500 bg-white p-8 rounded-sm shadow-xl relative">
               <div className="absolute -top-4 left-1/2 -translate-x-1/2 px-4 py-1 bg-emerald-600 text-white font-mono-tech text-xs rounded-full">
                 MOST POPULAR
               </div>
 
               <div className="mb-6">
-                <span className="font-mono-tech text-xs text-emerald-600 tracking-widest uppercase">Comprehensive</span>
+                <span className="font-mono-tech text-xs text-emerald-600 tracking-widest uppercase">Full Screen</span>
                 <div className="mt-4 flex items-baseline gap-2">
-                  <span className="font-mono-tech text-5xl font-bold text-[#1c1c1c]">£895</span>
+                  <span className="font-mono-tech text-5xl font-bold text-[#1c1c1c]">£1,500</span>
                   <span className="font-mono-tech text-sm text-gray-500">per property</span>
                 </div>
               </div>
 
               <p className="text-gray-600 font-light mb-6 leading-relaxed">
-                Full diagnostic suite with extended analysis and consultation. Ideal for larger properties.
+                Complete diagnostic suite including EMF mapping and material toxicity screening for comprehensive property analysis.
               </p>
 
               <button className="w-full px-6 py-4 bg-emerald-600 text-white font-mono-tech text-sm rounded hover:bg-emerald-700 transition-all mb-8">
-                SELECT COMPREHENSIVE
+                SELECT PACKAGE
               </button>
 
               <div className="space-y-3">
                 <div className="flex items-start gap-3">
                   <Check size={18} className="text-emerald-600 mt-0.5 flex-shrink-0" />
-                  <span className="text-sm text-gray-700 font-medium">Everything in Essential, plus:</span>
+                  <span className="text-sm text-gray-700 font-medium">Everything in Light, Water and Air, plus:</span>
+                </div>
+                <div className="flex items-start gap-3">
+                  <Check size={18} className="text-emerald-600 mt-0.5 flex-shrink-0" />
+                  <span className="text-sm text-gray-700">EMF radiation mapping</span>
+                </div>
+                <div className="flex items-start gap-3">
+                  <Check size={18} className="text-emerald-600 mt-0.5 flex-shrink-0" />
+                  <span className="text-sm text-gray-700">Material toxicity screening</span>
                 </div>
                 <div className="flex items-start gap-3">
                   <Check size={18} className="text-emerald-600 mt-0.5 flex-shrink-0" />
@@ -120,15 +123,7 @@ export default function PricingPage() {
                 </div>
                 <div className="flex items-start gap-3">
                   <Check size={18} className="text-emerald-600 mt-0.5 flex-shrink-0" />
-                  <span className="text-sm text-gray-700">Mold & bacteria sampling</span>
-                </div>
-                <div className="flex items-start gap-3">
-                  <Check size={18} className="text-emerald-600 mt-0.5 flex-shrink-0" />
-                  <span className="text-sm text-gray-700">Circadian light analysis</span>
-                </div>
-                <div className="flex items-start gap-3">
-                  <Check size={18} className="text-emerald-600 mt-0.5 flex-shrink-0" />
-                  <span className="text-sm text-gray-700">Material toxicity screening</span>
+                  <span className="text-sm text-gray-700">Mould and bacteria sampling</span>
                 </div>
                 <div className="flex items-start gap-3">
                   <Check size={18} className="text-emerald-600 mt-0.5 flex-shrink-0" />
@@ -145,32 +140,35 @@ export default function PricingPage() {
               </div>
             </div>
 
-            {/* Premium Package */}
             <div className="border border-gray-200 bg-white p-8 rounded-sm hover:shadow-xl transition-all duration-300">
               <div className="mb-6">
-                <span className="font-mono-tech text-xs text-gray-500 tracking-widest uppercase">Premium</span>
+                <span className="font-mono-tech text-xs text-gray-500 tracking-widest uppercase">Full Screen + Lab</span>
                 <div className="mt-4 flex items-baseline gap-2">
-                  <span className="font-mono-tech text-5xl font-bold text-[#1c1c1c]">£1,495</span>
+                  <span className="font-mono-tech text-5xl font-bold text-[#1c1c1c]">£3,000</span>
                   <span className="font-mono-tech text-sm text-gray-500">per property</span>
                 </div>
               </div>
 
               <p className="text-gray-600 font-light mb-6 leading-relaxed">
-                White-glove service for high-value properties and discerning buyers requiring comprehensive analysis.
+                White-glove service with comprehensive laboratory testing for high-value properties requiring exhaustive analysis.
               </p>
 
               <button className="w-full px-6 py-4 bg-[#1c1c1c] text-white font-mono-tech text-sm rounded hover:bg-gray-800 transition-all mb-8">
-                SELECT PREMIUM
+                SELECT PACKAGE
               </button>
 
               <div className="space-y-3">
                 <div className="flex items-start gap-3">
                   <Check size={18} className="text-emerald-600 mt-0.5 flex-shrink-0" />
-                  <span className="text-sm text-gray-700 font-medium">Everything in Comprehensive, plus:</span>
+                  <span className="text-sm text-gray-700 font-medium">Everything in Full Screen, plus:</span>
                 </div>
                 <div className="flex items-start gap-3">
                   <Check size={18} className="text-emerald-600 mt-0.5 flex-shrink-0" />
-                  <span className="text-sm text-gray-700">Soil & garden contamination testing</span>
+                  <span className="text-sm text-gray-700">Comprehensive laboratory testing</span>
+                </div>
+                <div className="flex items-start gap-3">
+                  <Check size={18} className="text-emerald-600 mt-0.5 flex-shrink-0" />
+                  <span className="text-sm text-gray-700">Soil and garden contamination testing</span>
                 </div>
                 <div className="flex items-start gap-3">
                   <Check size={18} className="text-emerald-600 mt-0.5 flex-shrink-0" />
@@ -194,7 +192,7 @@ export default function PricingPage() {
                 </div>
                 <div className="flex items-start gap-3">
                   <Check size={18} className="text-emerald-600 mt-0.5 flex-shrink-0" />
-                  <span className="text-sm text-gray-700">24-hour rush available (+£500)</span>
+                  <span className="text-sm text-gray-700">Extended turnaround (5-7 days for lab analysis)</span>
                 </div>
               </div>
             </div>
@@ -202,7 +200,6 @@ export default function PricingPage() {
         </div>
       </section>
 
-      {/* What's Included */}
       <section className="py-24 bg-white border-y border-gray-100">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-16">
@@ -231,7 +228,7 @@ export default function PricingPage() {
               </div>
               <h3 className="font-serif-display text-xl mb-2">Fast Turnaround</h3>
               <p className="text-sm text-gray-600 font-light">
-                Standard 48-hour delivery from on-site assessment to report
+                Standard 48-hour delivery from on-site assessment to report (lab packages 5-7 days)
               </p>
             </div>
 
@@ -258,7 +255,6 @@ export default function PricingPage() {
         </div>
       </section>
 
-      {/* FAQ Section */}
       <section className="py-24 bg-[#F9F8F4]">
         <div className="max-w-4xl mx-auto px-6">
           <div className="text-center mb-16">
@@ -272,7 +268,7 @@ export default function PricingPage() {
               <h3 className="font-serif-display text-xl mb-2">How long does the assessment take?</h3>
               <p className="text-gray-600 font-light">
                 Our specialists need 90 minutes on-site to deploy sensors and collect samples.
-                You'll receive your complete report within 48 hours.
+                You'll receive your complete report within 48 hours for standard packages. Lab-based testing requires 5-7 days.
               </p>
             </div>
 
@@ -285,10 +281,9 @@ export default function PricingPage() {
             </div>
 
             <div className="bg-white border border-gray-200 p-6 rounded-sm">
-              <h3 className="font-serif-display text-xl mb-2">What if I need the report urgently?</h3>
+              <h3 className="font-serif-display text-xl mb-2">What's the difference between standard and lab testing?</h3>
               <p className="text-gray-600 font-light">
-                Premium package customers can add 24-hour rush delivery for an additional £500.
-                Contact us to discuss your timeline.
+                Standard packages use professional-grade portable equipment for immediate analysis. Lab packages include samples sent to ISO-certified laboratories for more comprehensive testing, requiring additional processing time.
               </p>
             </div>
 
@@ -303,7 +298,6 @@ export default function PricingPage() {
         </div>
       </section>
 
-      {/* CTA Section */}
       <section className="py-24 bg-white border-t border-gray-100">
         <div className="max-w-4xl mx-auto px-6 text-center">
           <h2 className="font-serif-display text-4xl lg:text-5xl mb-6">
