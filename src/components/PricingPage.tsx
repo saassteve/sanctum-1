@@ -70,7 +70,7 @@ export default function PricingPage() {
                 </div>
                 <div className="flex items-start gap-3">
                   <Check size={18} className="text-emerald-600 mt-0.5 flex-shrink-0" />
-                  <span className="text-sm text-gray-700">Sanctum Score™ report (25 pages)</span>
+                  <span className="text-sm text-gray-700">Sanctum Score™ report</span>
                 </div>
                 <div className="flex items-start gap-3">
                   <Check size={18} className="text-emerald-600 mt-0.5 flex-shrink-0" />
@@ -127,7 +127,7 @@ export default function PricingPage() {
                 </div>
                 <div className="flex items-start gap-3">
                   <Check size={18} className="text-emerald-600 mt-0.5 flex-shrink-0" />
-                  <span className="text-sm text-gray-700">40-page detailed report</span>
+                  <span className="text-sm text-gray-700">Detailed report</span>
                 </div>
                 <div className="flex items-start gap-3">
                   <Check size={18} className="text-emerald-600 mt-0.5 flex-shrink-0" />
@@ -184,7 +184,7 @@ export default function PricingPage() {
                 </div>
                 <div className="flex items-start gap-3">
                   <Check size={18} className="text-emerald-600 mt-0.5 flex-shrink-0" />
-                  <span className="text-sm text-gray-700">60-page executive report</span>
+                  <span className="text-sm text-gray-700">Executive report</span>
                 </div>
                 <div className="flex items-start gap-3">
                   <Check size={18} className="text-emerald-600 mt-0.5 flex-shrink-0" />

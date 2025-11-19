@@ -75,12 +75,16 @@ export default function SampleReport() {
             </h1>
             <p className="text-lg text-gray-600 font-light leading-relaxed max-w-2xl mb-10">
               Before you commit to a property purchase, get the complete environmental picture.
-              Our 40-page diagnostic report translates complex data into actionable insights.
+              Our diagnostic report translates complex data into actionable insights.
             </p>
-            <button className="px-8 py-4 bg-[#1c1c1c] text-white font-mono-tech text-sm rounded hover:bg-gray-800 transition-all hover:translate-y-[-2px] shadow-xl shadow-gray-200/50 flex items-center gap-2">
+            <a
+              href="/sample-report.pdf"
+              download="Sanctum-Sample-Report.pdf"
+              className="px-8 py-4 bg-[#1c1c1c] text-white font-mono-tech text-sm rounded hover:bg-gray-800 transition-all hover:translate-y-[-2px] shadow-xl shadow-gray-200/50 flex items-center gap-2 w-fit"
+            >
               <Download size={16} />
               DOWNLOAD SAMPLE PDF
-            </button>
+            </a>
           </div>
         </div>
       </section>
