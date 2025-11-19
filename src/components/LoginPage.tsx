@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
 import { useNavigate, Link, useSearchParams } from 'react-router-dom';
 import { useAuth } from '../contexts/AuthContext';
+import { supabase } from '../lib/supabase';
 import { ArrowLeft, Mail, Lock, AlertCircle, Eye, EyeOff } from 'lucide-react';
 
 export default function LoginPage() {
   const navigate = useNavigate();
-  const { signIn } = useAuth();
+  const { signIn, refreshProfile } = useAuth();
   const [searchParams] = useSearchParams();
   const redirectUrl = searchParams.get('redirect');
   const [email, setEmail] = useState('');
@@ -25,7 +26,19 @@ export default function LoginPage() {
       setError(error.message);
       setLoading(false);
     } else {
-      navigate(redirectUrl || '/dashboard');
+      await refreshProfile();
+
+      const { data: profileData } = await supabase
+        .from('profiles')
+        .select('role')
+        .eq('email', email)
+        .maybeSingle();
+
+      if (profileData?.role === 'admin') {
+        navigate('/admin');
+      } else {
+        navigate(redirectUrl || '/dashboard');
+      }
     }
   };
 
