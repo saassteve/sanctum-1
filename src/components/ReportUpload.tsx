@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { supabase } from '../lib/supabase';
 import { useAuth } from '../contexts/AuthContext';
 import { useNavigate } from 'react-router-dom';
-import { Upload, FileText, CheckCircle, AlertCircle } from 'lucide-react';
+import { Upload, FileText, CheckCircle, AlertCircle, LogOut, ArrowLeft } from 'lucide-react';
 
 interface Order {
   id: string;
@@ -17,7 +17,7 @@ interface Order {
 }
 
 export default function ReportUpload() {
-  const { user, profile } = useAuth();
+  const { user, profile, signOut } = useAuth();
   const navigate = useNavigate();
   const [orders, setOrders] = useState<Order[]>([]);
   const [selectedOrder, setSelectedOrder] = useState<string>('');
@@ -133,11 +133,31 @@ export default function ReportUpload() {
     <div className="min-h-screen bg-gray-50">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <div className="mb-8">
-          <div className="flex items-center gap-3 mb-2">
-            <Upload className="w-8 h-8 text-gray-900" />
-            <h1 className="text-3xl font-bold text-gray-900">Upload Report</h1>
+          <div className="flex items-center justify-between">
+            <div>
+              <div className="flex items-center gap-3 mb-2">
+                <Upload className="w-8 h-8 text-gray-900" />
+                <h1 className="text-3xl font-bold text-gray-900">Upload Report</h1>
+              </div>
+              <p className="text-gray-600">Create and upload assessment reports for orders</p>
+            </div>
+            <div className="flex items-center gap-3">
+              <button
+                onClick={() => navigate('/admin')}
+                className="flex items-center gap-2 px-6 py-3 border border-gray-300 rounded-lg font-semibold hover:bg-gray-50 transition-colors"
+              >
+                <ArrowLeft className="w-5 h-5" />
+                Back to Dashboard
+              </button>
+              <button
+                onClick={() => signOut()}
+                className="flex items-center gap-2 px-6 py-3 border border-gray-300 rounded-lg font-semibold hover:bg-gray-50 transition-colors"
+              >
+                <LogOut className="w-5 h-5" />
+                Logout
+              </button>
+            </div>
           </div>
-          <p className="text-gray-600">Create and upload assessment reports for orders</p>
         </div>
 
         {success && (
@@ -251,32 +271,23 @@ export default function ReportUpload() {
               />
             </div>
 
-            <div className="flex gap-4">
-              <button
-                type="submit"
-                disabled={loading}
-                className="flex-1 bg-gray-900 text-white py-3 rounded-lg font-semibold hover:bg-gray-800 transition-colors disabled:bg-gray-400 disabled:cursor-not-allowed flex items-center justify-center gap-2"
-              >
-                {loading ? (
-                  <>
-                    <div className="animate-spin rounded-full h-5 w-5 border-b-2 border-white"></div>
-                    Uploading...
-                  </>
-                ) : (
-                  <>
-                    <FileText className="w-5 h-5" />
-                    Upload Report
-                  </>
-                )}
-              </button>
-              <button
-                type="button"
-                onClick={() => navigate('/admin')}
-                className="px-6 py-3 border border-gray-300 rounded-lg font-semibold hover:bg-gray-50 transition-colors"
-              >
-                Back to Dashboard
-              </button>
-            </div>
+            <button
+              type="submit"
+              disabled={loading}
+              className="w-full bg-gray-900 text-white py-3 rounded-lg font-semibold hover:bg-gray-800 transition-colors disabled:bg-gray-400 disabled:cursor-not-allowed flex items-center justify-center gap-2"
+            >
+              {loading ? (
+                <>
+                  <div className="animate-spin rounded-full h-5 w-5 border-b-2 border-white"></div>
+                  Uploading...
+                </>
+              ) : (
+                <>
+                  <FileText className="w-5 h-5" />
+                  Upload Report
+                </>
+              )}
+            </button>
           </form>
         </div>
       </div>

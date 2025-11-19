@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { supabase } from '../lib/supabase';
 import { useAuth } from '../contexts/AuthContext';
 import { useNavigate } from 'react-router-dom';
-import { Users, FileText, Package, ChevronDown, ChevronUp, Shield, Upload } from 'lucide-react';
+import { Users, FileText, Package, ChevronDown, ChevronUp, Shield, Upload, LogOut } from 'lucide-react';
 
 interface User {
   id: string;
@@ -10,6 +10,26 @@ interface User {
   full_name: string | null;
   role: string;
   created_at: string;
+}
+
+interface PropertyAssessment {
+  id: string;
+  property_address: string;
+  property_postcode: string;
+  property_type: string;
+  bedrooms: number;
+  preferred_assessment_date: string;
+  additional_notes: string | null;
+  property_age: string | null;
+  construction_type: string | null;
+  heating_system: string | null;
+  water_supply: string | null;
+  building_concerns: string | null;
+  health_priorities: string | null;
+  occupancy_status: string | null;
+  access_instructions: string | null;
+  contact_phone: string | null;
+  alternative_contact: string | null;
 }
 
 interface Order {
@@ -24,6 +44,7 @@ interface Order {
     email: string;
     full_name: string | null;
   };
+  property_assessments: PropertyAssessment[];
 }
 
 interface Report {
@@ -40,7 +61,7 @@ interface Report {
 }
 
 export default function AdminDashboard() {
-  const { user, profile } = useAuth();
+  const { user, profile, signOut } = useAuth();
   const navigate = useNavigate();
   const [activeTab, setActiveTab] = useState<'users' | 'orders' | 'reports'>('users');
   const [users, setUsers] = useState<User[]>([]);
@@ -84,6 +105,9 @@ export default function AdminDashboard() {
         profiles (
           email,
           full_name
+        ),
+        property_assessments (
+          *
         )
       `)
       .order('created_at', { ascending: false });
@@ -207,13 +231,22 @@ export default function AdminDashboard() {
               </div>
               <p className="text-gray-600">Manage users, orders, and reports</p>
             </div>
-            <button
-              onClick={() => navigate('/admin/upload-report')}
-              className="flex items-center gap-2 px-6 py-3 bg-gray-900 text-white rounded-lg font-semibold hover:bg-gray-800 transition-colors"
-            >
-              <Upload className="w-5 h-5" />
-              Upload Report
-            </button>
+            <div className="flex items-center gap-3">
+              <button
+                onClick={() => navigate('/admin/upload-report')}
+                className="flex items-center gap-2 px-6 py-3 bg-gray-900 text-white rounded-lg font-semibold hover:bg-gray-800 transition-colors"
+              >
+                <Upload className="w-5 h-5" />
+                Upload Report
+              </button>
+              <button
+                onClick={() => signOut()}
+                className="flex items-center gap-2 px-6 py-3 border border-gray-300 rounded-lg font-semibold hover:bg-gray-50 transition-colors"
+              >
+                <LogOut className="w-5 h-5" />
+                Logout
+              </button>
+            </div>
           </div>
         </div>
 
@@ -360,7 +393,103 @@ export default function AdminDashboard() {
                           </div>
                         </div>
 
-                        <div className="mt-4">
+                        {order.property_assessments && order.property_assessments.length > 0 && (
+                          <div className="mt-6 border-t border-gray-200 pt-4">
+                            <h3 className="text-lg font-semibold text-gray-900 mb-4">Property Assessment Details</h3>
+                            {order.property_assessments.map((assessment) => (
+                              <div key={assessment.id} className="space-y-4">
+                                <div className="grid grid-cols-2 gap-4">
+                                  <div>
+                                    <p className="text-sm text-gray-600 mb-1">Property Address</p>
+                                    <p className="text-sm text-gray-900">{assessment.property_address}</p>
+                                  </div>
+                                  <div>
+                                    <p className="text-sm text-gray-600 mb-1">Postcode</p>
+                                    <p className="text-sm text-gray-900">{assessment.property_postcode}</p>
+                                  </div>
+                                  <div>
+                                    <p className="text-sm text-gray-600 mb-1">Property Type</p>
+                                    <p className="text-sm text-gray-900">{assessment.property_type}</p>
+                                  </div>
+                                  <div>
+                                    <p className="text-sm text-gray-600 mb-1">Bedrooms</p>
+                                    <p className="text-sm text-gray-900">{assessment.bedrooms}</p>
+                                  </div>
+                                  <div>
+                                    <p className="text-sm text-gray-600 mb-1">Preferred Assessment Date</p>
+                                    <p className="text-sm text-gray-900">{new Date(assessment.preferred_assessment_date).toLocaleDateString('en-GB')}</p>
+                                  </div>
+                                  <div>
+                                    <p className="text-sm text-gray-600 mb-1">Contact Phone</p>
+                                    <p className="text-sm text-gray-900">{assessment.contact_phone || '-'}</p>
+                                  </div>
+                                  {assessment.property_age && (
+                                    <div>
+                                      <p className="text-sm text-gray-600 mb-1">Property Age</p>
+                                      <p className="text-sm text-gray-900">{assessment.property_age}</p>
+                                    </div>
+                                  )}
+                                  {assessment.construction_type && (
+                                    <div>
+                                      <p className="text-sm text-gray-600 mb-1">Construction Type</p>
+                                      <p className="text-sm text-gray-900">{assessment.construction_type}</p>
+                                    </div>
+                                  )}
+                                  {assessment.heating_system && (
+                                    <div>
+                                      <p className="text-sm text-gray-600 mb-1">Heating System</p>
+                                      <p className="text-sm text-gray-900">{assessment.heating_system}</p>
+                                    </div>
+                                  )}
+                                  {assessment.water_supply && (
+                                    <div>
+                                      <p className="text-sm text-gray-600 mb-1">Water Supply</p>
+                                      <p className="text-sm text-gray-900">{assessment.water_supply}</p>
+                                    </div>
+                                  )}
+                                  {assessment.occupancy_status && (
+                                    <div>
+                                      <p className="text-sm text-gray-600 mb-1">Occupancy Status</p>
+                                      <p className="text-sm text-gray-900">{assessment.occupancy_status}</p>
+                                    </div>
+                                  )}
+                                  {assessment.alternative_contact && (
+                                    <div>
+                                      <p className="text-sm text-gray-600 mb-1">Alternative Contact</p>
+                                      <p className="text-sm text-gray-900">{assessment.alternative_contact}</p>
+                                    </div>
+                                  )}
+                                </div>
+                                {assessment.building_concerns && (
+                                  <div>
+                                    <p className="text-sm text-gray-600 mb-1">Building Concerns</p>
+                                    <p className="text-sm text-gray-900">{assessment.building_concerns}</p>
+                                  </div>
+                                )}
+                                {assessment.health_priorities && (
+                                  <div>
+                                    <p className="text-sm text-gray-600 mb-1">Health Priorities</p>
+                                    <p className="text-sm text-gray-900">{assessment.health_priorities}</p>
+                                  </div>
+                                )}
+                                {assessment.access_instructions && (
+                                  <div>
+                                    <p className="text-sm text-gray-600 mb-1">Access Instructions</p>
+                                    <p className="text-sm text-gray-900">{assessment.access_instructions}</p>
+                                  </div>
+                                )}
+                                {assessment.additional_notes && (
+                                  <div>
+                                    <p className="text-sm text-gray-600 mb-1">Additional Notes</p>
+                                    <p className="text-sm text-gray-900">{assessment.additional_notes}</p>
+                                  </div>
+                                )}
+                              </div>
+                            ))}
+                          </div>
+                        )}
+
+                        <div className="mt-6 pt-4 border-t border-gray-200">
                           <label className="block text-sm font-medium text-gray-700 mb-2">
                             Update Stage
                           </label>
