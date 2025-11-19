@@ -8,6 +8,7 @@ import Hero from './components/Hero';
 import ScoreSection from './components/ScoreSection';
 import FivePillars from './components/FivePillars';
 import ProcessSection from './components/ProcessSection';
+import MissionSection from './components/MissionSection';
 import FinalCTA from './components/FinalCTA';
 import Footer from './components/Footer';
 import AtmosphericPurityDiagnostic from './components/AtmosphericPurityDiagnostic';
@@ -45,6 +46,7 @@ function App() {
         <ScoreSection />
         <FivePillars />
         <ProcessSection />
+        <MissionSection />
         <FinalCTA />
       </>
     );

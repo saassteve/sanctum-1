@@ -59,13 +59,16 @@ export default function Header({ isMenuOpen, setIsMenuOpen }: HeaderProps) {
           <button onClick={() => handleNavigation('process')} className="hover:text-emerald-700 transition-colors">
             Process
           </button>
+          <button onClick={() => handleNavigation('about')} className="hover:text-emerald-700 transition-colors">
+            Mission
+          </button>
           <button onClick={() => handleNavigation('sample')} className="hover:text-emerald-700 transition-colors">
             Sample Report
           </button>
         </div>
 
         <div className="hidden md:flex items-center gap-4">
-          <button className="text-xs font-mono-tech hover:text-emerald-700 uppercase tracking-widest">Log In</button>
+          <button onClick={() => navigate('/login')} className="text-xs font-mono-tech hover:text-emerald-700 uppercase tracking-widest">Log In</button>
           <button
             onClick={() => navigate('/pricing')}
             className="flex items-center gap-2 px-5 py-2 bg-[#1c1c1c] text-[#F9F8F4] rounded-full hover:bg-emerald-700 transition-all duration-300 font-mono-tech text-xs group"
@@ -90,7 +93,9 @@ export default function Header({ isMenuOpen, setIsMenuOpen }: HeaderProps) {
           <div className="flex flex-col gap-8 text-center font-serif-display text-3xl">
             <button onClick={() => handleNavigation('diagnostics')}>Diagnostics</button>
             <button onClick={() => handleNavigation('process')}>Process</button>
+            <button onClick={() => handleNavigation('about')}>Mission</button>
             <button onClick={() => handleNavigation('sample')}>Report</button>
+            <button onClick={() => { navigate('/login'); setIsMenuOpen(false); }} className="text-xl font-mono-tech">Log In</button>
             <button
               onClick={() => { navigate('/pricing'); setIsMenuOpen(false); }}
               className="mt-8 px-8 py-4 bg-[#1c1c1c] text-white font-mono-tech text-sm rounded-full"
