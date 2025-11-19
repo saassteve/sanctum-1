@@ -17,6 +17,7 @@ import MaterialToxicityDiagnostic from './components/MaterialToxicityDiagnostic'
 import SampleReport from './components/SampleReport';
 import AboutUsIntro from './components/AboutUsIntro';
 import AboutPage from './components/AboutPage';
+import PricingPage from './components/PricingPage';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { Toaster } from 'sonner';
 import HoverReceiver from './visual-edits/VisualEditsMessenger';
@@ -91,6 +92,17 @@ function App() {
     return <SampleReport />;
   };
 
+  const PricingPageWithSEO = () => {
+    useEffect(() => {
+      updateSEO({
+        title: 'Pricing - Sanctum Environmental Diagnostics',
+        description: 'Transparent pricing for comprehensive property health assessments. From £595 for essential diagnostics to premium packages with full environmental analysis.',
+        keywords: 'property assessment pricing, home inspection cost, environmental testing price'
+      });
+    }, []);
+    return <PricingPage />;
+  };
+
   return (
     <QueryClientProvider client={queryClient}>
       <Toaster />
@@ -106,6 +118,7 @@ function App() {
             <Route path="/circadian-alignment-diagnostic" element={<CircadianAlignmentWithSEO />} />
             <Route path="/material-toxicity-diagnostic" element={<MaterialToxicityWithSEO />} />
             <Route path="/sample-report" element={<SampleReportWithSEO />} />
+            <Route path="/pricing" element={<PricingPageWithSEO />} />
             <Route path="/about" element={<AboutPageWithSEO />} />
             <Route path="*" element={<HomePage />} />
           </Routes>
