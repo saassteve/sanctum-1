@@ -40,7 +40,7 @@ export default function Hero() {
         <div className="lg:col-span-7 relative h-[400px] lg:h-[600px] rounded-2xl overflow-hidden group shadow-2xl order-1 lg:order-2">
           {/* Background Image */}
           <img
-            src="/sanctumbedroom.png"
+            src="/londonapartment.png"
             alt="Modern Interior"
             className={`absolute inset-0 w-full h-full object-cover transition-all duration-700 ${scanMode ? 'grayscale scale-105 opacity-40' : 'scale-100'}`}
           />
