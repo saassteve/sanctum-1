@@ -1,5 +1,5 @@
-import React from 'react';
-import { Menu, X } from 'lucide-react';
+import React, { useState, useEffect } from 'react';
+import { Menu, X, ArrowRight } from 'lucide-react';
 import { useNavigate, useLocation } from 'react-router-dom';
 
 interface HeaderProps {
@@ -10,10 +10,17 @@ interface HeaderProps {
 export default function Header({ isMenuOpen, setIsMenuOpen }: HeaderProps) {
   const navigate = useNavigate();
   const location = useLocation();
+  const [scrolled, setScrolled] = useState(false);
+  const [scanMode, setScanMode] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => setScrolled(window.scrollY > 50);
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   const handleNavigation = (sectionId: string) => {
     if (location.pathname !== '/') {
-      // If not on homepage, navigate to homepage first, then scroll
       navigate('/');
       setTimeout(() => {
         const element = document.getElementById(sectionId);
@@ -22,7 +29,6 @@ export default function Header({ isMenuOpen, setIsMenuOpen }: HeaderProps) {
         }
       }, 100);
     } else {
-      // If on homepage, just scroll to section
       const element = document.getElementById(sectionId);
       if (element) {
         element.scrollIntoView({ behavior: 'smooth' });
@@ -32,79 +38,56 @@ export default function Header({ isMenuOpen, setIsMenuOpen }: HeaderProps) {
   };
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-100">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16">
-          {/* Logo */}
-          <div className="flex items-center cursor-pointer" onClick={() => navigate('/')}>
-            <img
-              src="/SANCTUM_LOGO.png"
-              alt="Sanctum"
-              className="h-8 w-auto"
-            />
-          </div>
+    <nav className={`fixed top-0 w-full z-50 transition-all duration-500 ${scrolled ? 'bg-[#F9F8F4]/95 backdrop-blur-md border-b border-gray-200 py-4' : 'bg-transparent py-6'}`}>
+      <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
+        <div className="flex items-center gap-2 z-50 relative cursor-pointer" onClick={() => { navigate('/'); window.scrollTo(0, 0); }}>
+          <div className={`w-3 h-3 rounded-full animate-pulse ${scanMode ? 'bg-emerald-400 shadow-[0_0_10px_#34d399]' : 'bg-[#1c1c1c]'}`}></div>
+          <span className="font-serif-display text-2xl tracking-tight font-semibold">Sanctum.</span>
+        </div>
 
-          {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-10">
-            <button onClick={() => handleNavigation('bio-environmental')} className="text-sm font-medium text-[#1A1A1A] hover:text-sanctum-cyan-400 transition-colors">
-              DIAGNOSTICS
-            </button>
-            <button onClick={() => handleNavigation('sanctum-score')} className="text-sm font-medium text-[#1A1A1A] hover:text-sanctum-cyan-400 transition-colors">
-              SCORING
-            </button>
-            <button onClick={() => handleNavigation('blueprint')} className="text-sm font-medium text-[#1A1A1A] hover:text-sanctum-cyan-400 transition-colors">
-              PROCESS
-            </button>
-            <button onClick={() => { navigate('/about'); window.scrollTo(0, 0); setIsMenuOpen(false); }} className="text-sm font-medium text-[#1A1A1A] hover:text-sanctum-cyan-400 transition-colors">
-              ABOUT
-            </button>
-          </nav>
-
-          {/* Desktop CTA Button */}
-          <div className="hidden md:flex items-center">
-            <button className="px-6 py-2.5 text-sm font-semibold text-white bg-sanctum-cyan-400 hover:bg-sanctum-cyan-500 transition-all duration-300 shadow-md hover:shadow-lg rounded-md">
-              SCHEDULE ASSESSMENT
-            </button>
-          </div>
-
-          {/* Mobile Menu Button */}
-          <button
-            className="md:hidden"
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
-          >
-            {isMenuOpen ? (
-              <X className="h-6 w-6 text-[#1A1A1A]" />
-            ) : (
-              <Menu className="h-6 w-6 text-[#1A1A1A]" />
-            )}
+        {/* Desktop Nav */}
+        <div className="hidden md:flex gap-8 font-mono-tech text-xs tracking-widest uppercase text-gray-500">
+          <button onClick={() => handleNavigation('diagnostics')} className="hover:text-emerald-700 transition-colors">
+            Diagnostics
+          </button>
+          <button onClick={() => handleNavigation('process')} className="hover:text-emerald-700 transition-colors">
+            Process
+          </button>
+          <button onClick={() => handleNavigation('sample')} className="hover:text-emerald-700 transition-colors">
+            Sample Report
           </button>
         </div>
+
+        <div className="hidden md:flex items-center gap-4">
+          <button className="text-xs font-mono-tech hover:text-emerald-700 uppercase tracking-widest">Log In</button>
+          <button className="flex items-center gap-2 px-5 py-2 bg-[#1c1c1c] text-[#F9F8F4] rounded-full hover:bg-emerald-700 transition-all duration-300 font-mono-tech text-xs group">
+            <span>Initiate Survey</span>
+            <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />
+          </button>
+        </div>
+
+        {/* Mobile Menu Toggle */}
+        <button
+          onClick={() => setIsMenuOpen(!isMenuOpen)}
+          className="md:hidden text-gray-800 z-50 relative"
+        >
+          {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
+        </button>
       </div>
 
-      {/* Mobile Navigation */}
+      {/* Mobile Menu Overlay */}
       {isMenuOpen && (
-        <div className="md:hidden bg-white border-b border-gray-100">
-          <div className="px-4 py-4 space-y-4">
-            <button onClick={() => handleNavigation('bio-environmental')} className="block text-sm font-medium text-[#1A1A1A] text-left w-full">
-              DIAGNOSTICS
+        <div className="fixed inset-0 bg-[#F9F8F4] z-40 flex flex-col justify-center items-center p-8">
+          <div className="flex flex-col gap-8 text-center font-serif-display text-3xl">
+            <button onClick={() => handleNavigation('diagnostics')}>Diagnostics</button>
+            <button onClick={() => handleNavigation('process')}>Process</button>
+            <button onClick={() => handleNavigation('sample')}>Report</button>
+            <button className="mt-8 px-8 py-4 bg-[#1c1c1c] text-white font-mono-tech text-sm rounded-full">
+              Initiate Survey
             </button>
-            <button onClick={() => handleNavigation('sanctum-score')} className="block text-sm font-medium text-[#1A1A1A] text-left w-full">
-              SCORING
-            </button>
-            <button onClick={() => handleNavigation('blueprint')} className="block text-sm font-medium text-[#1A1A1A] text-left w-full">
-              PROCESS
-            </button>
-            <button onClick={() => { navigate('/about'); window.scrollTo(0, 0); setIsMenuOpen(false); }} className="block text-sm font-medium text-[#1A1A1A] text-left w-full">
-              ABOUT
-            </button>
-            <div className="pt-4">
-              <button className="w-full px-4 py-2.5 text-sm font-semibold text-white bg-sanctum-cyan-400 hover:bg-sanctum-cyan-500 rounded-md">
-                SCHEDULE ASSESSMENT
-              </button>
-            </div>
           </div>
         </div>
       )}
-    </header>
+    </nav>
   );
 }

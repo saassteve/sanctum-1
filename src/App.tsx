@@ -4,10 +4,9 @@ import { useEffect } from 'react';
 import { updateSEO, seoData } from './utils/seo';
 import Header from './components/Header';
 import Hero from './components/Hero';
-import TrustBar from './components/TrustBar';
-import BioEnvironmentalProfile from './components/BioEnvironmentalProfile';
-import SanctumScore from './components/SanctumScore';
-import DataToAction from './components/DataToAction';
+import ScoreSection from './components/ScoreSection';
+import FivePillars from './components/FivePillars';
+import ProcessSection from './components/ProcessSection';
 import FinalCTA from './components/FinalCTA';
 import Footer from './components/Footer';
 import AtmosphericPurityDiagnostic from './components/AtmosphericPurityDiagnostic';
@@ -35,11 +34,9 @@ function App() {
     return (
       <>
         <Hero />
-        <TrustBar />
-        <BioEnvironmentalProfile />
-        <SanctumScore />
-        <DataToAction />
-        <AboutUsIntro />
+        <ScoreSection />
+        <FivePillars />
+        <ProcessSection />
         <FinalCTA />
       </>
     );
@@ -99,7 +96,7 @@ function App() {
       <Toaster />
       <HoverReceiver />
       <Router>
-        <div className="min-h-screen bg-white">
+        <div className="min-h-screen bg-[#F9F8F4]">
           <Header isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
           <Routes>
             <Route path="/" element={<HomePage />} />
