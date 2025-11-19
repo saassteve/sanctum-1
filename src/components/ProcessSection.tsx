@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Calendar, Home, FileText, TrendingUp, ArrowRight, Box, Microscope, Activity } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
 
 const PROCESS_STEPS = [
   {
@@ -30,6 +31,7 @@ const PROCESS_STEPS = [
 
 export default function ProcessSection() {
   const [activeStep, setActiveStep] = useState(0);
+  const navigate = useNavigate();
 
   return (
     <section id="process" className="py-24 bg-white border-t border-gray-100">
@@ -46,7 +48,10 @@ export default function ProcessSection() {
             <p className="text-gray-500 text-lg font-light mb-8">
               We move fast because the property market does too. Our entire process is designed to deliver lab-grade data within your 48-hour decision window.
             </p>
-            <button className="hidden lg:flex items-center gap-2 text-sm font-mono-tech underline decoration-emerald-400 underline-offset-4 hover:text-emerald-600">
+            <button
+              onClick={() => navigate('/sample-report')}
+              className="hidden lg:flex items-center gap-2 text-sm font-mono-tech underline decoration-emerald-400 underline-offset-4 hover:text-emerald-600"
+            >
               DOWNLOAD SAMPLE REPORT <ArrowRight size={14} />
             </button>
           </div>

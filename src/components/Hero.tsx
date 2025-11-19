@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
 import { Sun, Activity, Scan, Wind, Droplets, Zap } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
 
 export default function Hero() {
   const [scanMode, setScanMode] = useState(false);
+  const navigate = useNavigate();
 
   return (
     <header className="relative pt-32 pb-20 lg:pt-48 lg:pb-32 px-6 overflow-hidden bg-[#F9F8F4]">
@@ -23,7 +25,10 @@ export default function Hero() {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4">
-            <button className="px-8 py-4 bg-[#1c1c1c] text-white font-mono-tech text-sm rounded hover:bg-gray-800 transition-all hover:translate-y-[-2px] shadow-xl shadow-gray-200/50">
+            <button
+              onClick={() => navigate('/pricing')}
+              className="px-8 py-4 bg-[#1c1c1c] text-white font-mono-tech text-sm rounded hover:bg-gray-800 transition-all hover:translate-y-[-2px] shadow-xl shadow-gray-200/50"
+            >
               // CHECK AVAILABILITY
             </button>
             <button

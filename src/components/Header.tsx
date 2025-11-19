@@ -60,7 +60,10 @@ export default function Header({ isMenuOpen, setIsMenuOpen }: HeaderProps) {
 
         <div className="hidden md:flex items-center gap-4">
           <button className="text-xs font-mono-tech hover:text-emerald-700 uppercase tracking-widest">Log In</button>
-          <button className="flex items-center gap-2 px-5 py-2 bg-[#1c1c1c] text-[#F9F8F4] rounded-full hover:bg-emerald-700 transition-all duration-300 font-mono-tech text-xs group">
+          <button
+            onClick={() => navigate('/pricing')}
+            className="flex items-center gap-2 px-5 py-2 bg-[#1c1c1c] text-[#F9F8F4] rounded-full hover:bg-emerald-700 transition-all duration-300 font-mono-tech text-xs group"
+          >
             <span>Initiate Survey</span>
             <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />
           </button>
@@ -82,7 +85,10 @@ export default function Header({ isMenuOpen, setIsMenuOpen }: HeaderProps) {
             <button onClick={() => handleNavigation('diagnostics')}>Diagnostics</button>
             <button onClick={() => handleNavigation('process')}>Process</button>
             <button onClick={() => handleNavigation('sample')}>Report</button>
-            <button className="mt-8 px-8 py-4 bg-[#1c1c1c] text-white font-mono-tech text-sm rounded-full">
+            <button
+              onClick={() => { navigate('/pricing'); setIsMenuOpen(false); }}
+              className="mt-8 px-8 py-4 bg-[#1c1c1c] text-white font-mono-tech text-sm rounded-full"
+            >
               Initiate Survey
             </button>
           </div>
