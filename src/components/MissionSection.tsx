@@ -15,7 +15,7 @@ export default function MissionSection() {
         </div>
         <div className="lg:col-span-8">
           <p className="text-xl font-light leading-relaxed text-gray-600 mb-8">
-            Buying a home is the most significant financial decision of your life, yet the standard survey has remained unchanged for decades—obsessed with structural integrity but blind to environmental health.
+            Buying a home is the most significant financial decision of your life, yet the standard survey has remained unchanged for decades, obsessed with structural integrity but blind to environmental health.
           </p>
           <p className="text-gray-500 font-light leading-relaxed mb-12 text-lg">
             Sanctum was founded to close this gap. We don't manufacture the science; we aggregate it. By partnering with accredited UK laboratories and deploying industrial-grade diagnostic hardware, we translate complex biological data into clear, actionable insights for homebuyers.
