@@ -62,7 +62,7 @@ export default function Hero() {
                   <div className="w-3 h-3 bg-emerald-500 rounded-full relative z-10"></div>
                   <div className="absolute bottom-6 left-4 bg-black/80 text-emerald-400 font-mono-tech text-[10px] p-3 rounded backdrop-blur-md border border-emerald-500/30 w-40 whitespace-nowrap">
                   <strong>VOC LEVELS: ELEVATED</strong><br/>
-                  SOURCE: CARPET ADHESIVE<br/>
+                  SOURCE: FLOOR ADHESIVE<br/>
                   PPM: 450 (HIGH)
                   </div>
               </div>
