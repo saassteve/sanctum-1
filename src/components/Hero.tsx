@@ -56,11 +56,11 @@ export default function Hero() {
             <div className="absolute inset-0 bg-[linear-gradient(rgba(16,185,129,0.1)_1px,transparent_1px),linear-gradient(90deg,rgba(16,185,129,0.1)_1px,transparent_1px)] bg-[size:40px_40px]"></div>
 
             {/* Data Points */}
-            <div className="absolute top-1/4 left-1/3">
+            <div className="absolute top-[15%] left-[10%]">
               <div className="relative">
                   <div className="w-3 h-3 bg-emerald-500 rounded-full shadow-[0_0_15px_rgba(16,185,129,0.8)] animate-ping absolute opacity-75"></div>
                   <div className="w-3 h-3 bg-emerald-500 rounded-full relative z-10"></div>
-                  <div className="absolute top-6 left-4 bg-black/80 text-emerald-400 font-mono-tech text-[10px] p-3 rounded backdrop-blur-md border border-emerald-500/30 w-40">
+                  <div className="absolute top-6 left-4 bg-black/80 text-emerald-400 font-mono-tech text-[10px] p-3 rounded backdrop-blur-md border border-emerald-500/30 w-40 whitespace-nowrap">
                   <strong>VOC LEVELS: ELEVATED</strong><br/>
                   SOURCE: CARPET ADHESIVE<br/>
                   PPM: 450 (HIGH)
@@ -68,11 +68,11 @@ export default function Hero() {
               </div>
             </div>
 
-            <div className="absolute bottom-1/3 right-1/4 delay-300">
+            <div className="absolute top-[55%] right-[10%] delay-300">
               <div className="relative">
                   <div className="w-3 h-3 bg-blue-500 rounded-full shadow-[0_0_15px_rgba(59,130,246,0.8)] animate-ping absolute opacity-75"></div>
                   <div className="w-3 h-3 bg-blue-500 rounded-full relative z-10"></div>
-                  <div className="absolute bottom-6 right-4 bg-black/80 text-blue-400 font-mono-tech text-[10px] p-3 rounded backdrop-blur-md border border-blue-500/30 w-40">
+                  <div className="absolute bottom-6 right-4 bg-black/80 text-blue-400 font-mono-tech text-[10px] p-3 rounded backdrop-blur-md border border-blue-500/30 w-40 whitespace-nowrap">
                   <strong>HUMIDITY: 62%</strong><br/>
                   RISK: MOLD GROWTH<br/>
                   AREA: WINDOW SEAL
@@ -80,11 +80,11 @@ export default function Hero() {
               </div>
             </div>
 
-            <div className="absolute top-1/2 right-1/2 delay-500">
+            <div className="absolute bottom-[15%] left-[55%] delay-500">
               <div className="relative">
                   <div className="w-3 h-3 bg-amber-500 rounded-full shadow-[0_0_15px_rgba(245,158,11,0.8)] animate-ping absolute opacity-75"></div>
                   <div className="w-3 h-3 bg-amber-500 rounded-full relative z-10"></div>
-                  <div className="absolute top-6 left-4 bg-black/80 text-amber-400 font-mono-tech text-[10px] p-3 rounded backdrop-blur-md border border-amber-500/30 w-40">
+                  <div className="absolute top-6 left-4 bg-black/80 text-amber-400 font-mono-tech text-[10px] p-3 rounded backdrop-blur-md border border-amber-500/30 w-40 whitespace-nowrap">
                   <strong>EMF: 12mG</strong><br/>
                   SOURCE: UNKNOWN<br/>
                   STATUS: INVESTIGATE
