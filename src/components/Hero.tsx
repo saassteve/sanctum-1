@@ -75,7 +75,7 @@ export default function Hero() {
                   <div className="absolute top-6 right-4 bg-black/80 text-blue-400 font-mono-tech text-[10px] p-3 rounded backdrop-blur-md border border-blue-500/30 w-40 whitespace-nowrap">
                   <strong>HUMIDITY: 62%</strong><br/>
                   RISK: MOLD GROWTH<br/>
-                  AREA: WINDOW SEAL
+                  AREA: KITCHEN VENT
                   </div>
               </div>
             </div>
